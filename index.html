@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard &#8212; художественная галерея</title>
+  <link type="Image/svg+xml" href="img/favicon.svg" rel="icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="libs/custom-scroll/simplebar.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="libs/choices/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="libs/emerge/emerge.js"></script>
+  <script defer src="js/index.js"></script>
+</head>
+
+<body class="emerge" data-await="hero" data-style-1="opacity: 0;" data-style-2="opacity: 1; transition: opacity 0s 0s;">
+
+  <header class="header emerge">
+
+    <div class="header__top">
+      <div class="container flex">
+
+        <div class="logo header__logo">
+          <svg viewBox="0 0 173 40" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип">
+            <path d="M2.78965 32.7802L0.289746 29.1348H2.09561L3.79365 31.7425L5.50518 29.1348H7.29756L4.79092 32.7802L7.42559 36.5873H5.6332L3.79365 33.7977L1.96084 36.5873H0.168457L2.78965 32.7802Z"/>
+            <path d="M7.60078 29.1348H9.32578L10.8419 33.3597C11.071 33.9616 11.2237 34.5276 11.3001 35.0577H11.354C11.3944 34.8106 11.4686 34.5119 11.5764 34.1615C11.6842 33.8066 12.2547 32.1311 13.2879 29.1348H14.9994L11.8122 37.5778C11.2327 39.1276 10.2669 39.9025 8.91475 39.9025C8.56436 39.9025 8.22295 39.8644 7.89053 39.788V38.5347C8.12861 38.5886 8.40039 38.6155 8.70586 38.6155C9.46953 38.6155 10.0063 38.173 10.3163 37.2881L10.5926 36.5873L7.60078 29.1348Z"/>
+            <path d="M23.2808 39.222H21.8051V36.5873H16.6975V39.222H15.2353V35.3609H15.8417C16.3718 34.6018 16.7918 33.6854 17.1018 32.6117C17.4162 31.5336 17.6026 30.3746 17.661 29.1348H22.1892V35.3609H23.2808V39.222ZM20.6326 35.3609V30.3477H19.0289C18.9436 31.273 18.7639 32.185 18.4898 33.0834C18.2203 33.9818 17.8901 34.741 17.4993 35.3609H20.6326Z"/>
+            <path d="M31.2724 32.8476C31.2724 34.0649 30.9602 35.015 30.3357 35.6979C29.7113 36.3807 28.8421 36.7221 27.728 36.7221C27.0317 36.7221 26.4163 36.5648 25.8817 36.2504C25.3472 35.9359 24.9361 35.4845 24.6486 34.896C24.3611 34.3075 24.2174 33.6247 24.2174 32.8476C24.2174 31.6392 24.5273 30.6958 25.1473 30.0175C25.7672 29.3392 26.6409 29 27.7685 29C28.8466 29 29.7001 29.3481 30.329 30.0444C30.9579 30.7362 31.2724 31.6706 31.2724 32.8476ZM25.848 32.8476C25.848 34.5681 26.4837 35.4283 27.755 35.4283C29.0128 35.4283 29.6417 34.5681 29.6417 32.8476C29.6417 31.145 29.0083 30.2938 27.7415 30.2938C27.0767 30.2938 26.5938 30.5139 26.2928 30.9541C25.9963 31.3943 25.848 32.0255 25.848 32.8476Z"/>
+            <path d="M36.7708 32.7532V29.1348H38.2465V32.7532L41.117 29.1348H42.7881L39.8569 32.7397L43.0509 36.5873H41.3057L38.2465 32.8071V36.5873H36.7708V32.8071L33.7184 36.5873H31.9799L35.1671 32.7397L32.2427 29.1348H33.9138L36.7708 32.7532Z"/>
+            <path d="M47.4577 36.7221C46.2987 36.7221 45.3913 36.3852 44.7355 35.7113C44.0841 35.033 43.7584 34.1009 43.7584 32.9149C43.7584 31.6976 44.0616 30.7407 44.6681 30.0444C45.2745 29.3481 46.1078 29 47.168 29C48.1518 29 48.9289 29.2987 49.4994 29.8962C50.0699 30.4937 50.3552 31.3157 50.3552 32.3624V33.2182H45.3891C45.4115 33.9414 45.6069 34.4984 45.9753 34.8893C46.3437 35.2756 46.8625 35.4687 47.5318 35.4687C47.9721 35.4687 48.3809 35.4283 48.7582 35.3475C49.14 35.2621 49.5488 35.1229 49.9846 34.9297V36.2167C49.5982 36.4009 49.2074 36.5312 48.8121 36.6075C48.4168 36.6839 47.9653 36.7221 47.4577 36.7221ZM47.168 30.1994C46.6648 30.1994 46.2605 30.3589 45.9551 30.6778C45.6541 30.9968 45.4744 31.4617 45.416 32.0727H48.7986C48.7896 31.4572 48.6414 30.9923 48.3539 30.6778C48.0664 30.3589 47.6711 30.1994 47.168 30.1994Z"/>
+            <path d="M55.1596 36.7221C54.032 36.7221 53.174 36.3941 52.5855 35.7383C52.0016 35.0779 51.7096 34.1323 51.7096 32.9015C51.7096 31.6481 52.015 30.6846 52.626 30.0107C53.2414 29.3369 54.1286 29 55.2876 29C56.0737 29 56.7812 29.146 57.4102 29.438L56.9317 30.7115C56.2624 30.451 55.7099 30.3207 55.2741 30.3207C53.9849 30.3207 53.3402 31.1765 53.3402 32.888C53.3402 33.7235 53.4997 34.3524 53.8187 34.7747C54.1421 35.1925 54.6138 35.4014 55.2337 35.4014C55.939 35.4014 56.6061 35.2262 57.235 34.8758V36.2571C56.952 36.4233 56.6487 36.5424 56.3253 36.6143C56.0063 36.6861 55.6178 36.7221 55.1596 36.7221Z"/>
+            <path d="M64.5864 29.1348V30.3746H62.1606V36.5873H60.5704V30.3746H58.1446V29.1348H64.5864Z"/>
+            <path d="M72.4904 31.0417C72.4904 31.9222 71.9761 32.4545 70.9474 32.6387V32.6926C71.5224 32.76 71.9626 32.9419 72.2681 33.2384C72.5735 33.5349 72.7263 33.9189 72.7263 34.3906C72.7263 35.0959 72.4567 35.6395 71.9177 36.0213C71.3831 36.3986 70.6037 36.5873 69.5795 36.5873H66.0217V29.1348H69.566C71.5156 29.1348 72.4904 29.7704 72.4904 31.0417ZM71.1023 34.2963C71.1023 33.9369 70.9631 33.6831 70.6846 33.5349C70.4061 33.3821 69.9883 33.3058 69.4313 33.3058H67.6052V35.4148H69.4717C70.5588 35.4148 71.1023 35.042 71.1023 34.2963ZM70.9069 31.1765C70.9069 30.88 70.7901 30.6666 70.5565 30.5363C70.3274 30.4016 69.9838 30.3342 69.5256 30.3342H67.6052V32.1266H69.2897C69.8198 32.1266 70.2219 32.0592 70.4959 31.9244C70.7699 31.7852 70.9069 31.5358 70.9069 31.1765Z"/>
+            <path d="M77.6183 36.7221C76.4593 36.7221 75.5519 36.3852 74.896 35.7113C74.2446 35.033 73.9189 34.1009 73.9189 32.9149C73.9189 31.6976 74.2222 30.7407 74.8286 30.0444C75.4351 29.3481 76.2684 29 77.3285 29C78.3123 29 79.0895 29.2987 79.66 29.8962C80.2305 30.4937 80.5157 31.3157 80.5157 32.3624V33.2182H75.5496C75.5721 33.9414 75.7675 34.4984 76.1358 34.8893C76.5042 35.2756 77.023 35.4687 77.6924 35.4687C78.1326 35.4687 78.5414 35.4283 78.9188 35.3475C79.3006 35.2621 79.7094 35.1229 80.1451 34.9297V36.2167C79.7588 36.4009 79.368 36.5312 78.9727 36.6075C78.5773 36.6839 78.1259 36.7221 77.6183 36.7221ZM77.3285 30.1994C76.8254 30.1994 76.4211 30.3589 76.1156 30.6778C75.8147 30.9968 75.635 31.4617 75.5766 32.0727H78.9592C78.9502 31.4572 78.802 30.9923 78.5145 30.6778C78.227 30.3589 77.8316 30.1994 77.3285 30.1994Z"/>
+            <path d="M83.8983 29.1348V32.1266H87.409V29.1348H88.9925V36.5873H87.409V33.3731H83.8983V36.5873H82.3148V29.1348H83.8983Z"/>
+            <path d="M92.8468 29.1348V32.1266H96.3574V29.1348H97.9409V36.5873H96.3574V33.3731H92.8468V36.5873H91.2633V29.1348H92.8468Z"/>
+            <path d="M104.875 36.5873L104.558 35.5496H104.504C104.145 36.0033 103.783 36.3133 103.419 36.4795C103.055 36.6412 102.588 36.7221 102.018 36.7221C101.285 36.7221 100.713 36.5244 100.299 36.1291C99.8905 35.7338 99.6861 35.1745 99.6861 34.4513C99.6861 33.6831 99.9714 33.1036 100.542 32.7128C101.112 32.322 101.982 32.1086 103.15 32.0727L104.437 32.0322V31.6347C104.437 31.1585 104.324 30.8036 104.1 30.57C103.88 30.3319 103.536 30.2129 103.069 30.2129C102.687 30.2129 102.321 30.269 101.97 30.3813C101.62 30.4937 101.283 30.6262 100.96 30.7789L100.448 29.6469C100.852 29.4357 101.294 29.2763 101.775 29.1685C102.256 29.0562 102.709 29 103.136 29C104.084 29 104.798 29.2066 105.279 29.6199C105.764 30.0332 106.007 30.6823 106.007 31.5673V36.5873H104.875ZM102.516 35.5092C103.091 35.5092 103.552 35.3497 103.898 35.0308C104.248 34.7073 104.423 34.2559 104.423 33.6764V33.0295L103.466 33.0699C102.721 33.0969 102.177 33.2227 101.836 33.4473C101.499 33.6674 101.33 34.0065 101.33 34.4647C101.33 34.7972 101.429 35.0555 101.627 35.2396C101.824 35.4193 102.121 35.5092 102.516 35.5092Z"/>
+            <path d="M108.978 36.5873H107.206L109.281 33.5349C108.778 33.3911 108.383 33.1351 108.096 32.7667C107.808 32.3938 107.664 31.9334 107.664 31.3854C107.664 30.6801 107.916 30.1298 108.419 29.7345C108.922 29.3347 109.609 29.1348 110.481 29.1348H113.877V36.5873H112.287V33.7168H110.784L108.978 36.5873ZM109.207 31.3988C109.207 31.7807 109.351 32.0682 109.639 32.2613C109.931 32.45 110.321 32.5443 110.811 32.5443H112.287V30.3342H110.562C110.13 30.3342 109.796 30.4263 109.558 30.6104C109.324 30.7946 109.207 31.0574 109.207 31.3988Z"/>
+            <path d="M124.544 29.1348V30.3746H121.309V36.5873H119.726V29.1348H124.544Z"/>
+            <path d="M130.642 36.5873L130.325 35.5496H130.271C129.912 36.0033 129.55 36.3133 129.186 36.4795C128.822 36.6412 128.355 36.7221 127.785 36.7221C127.053 36.7221 126.48 36.5244 126.067 36.1291C125.658 35.7338 125.453 35.1745 125.453 34.4513C125.453 33.6831 125.739 33.1036 126.309 32.7128C126.88 32.322 127.749 32.1086 128.917 32.0727L130.204 32.0322V31.6347C130.204 31.1585 130.092 30.8036 129.867 30.57C129.647 30.3319 129.303 30.2129 128.836 30.2129C128.454 30.2129 128.088 30.269 127.738 30.3813C127.387 30.4937 127.05 30.6262 126.727 30.7789L126.215 29.6469C126.619 29.4357 127.062 29.2763 127.542 29.1685C128.023 29.0562 128.477 29 128.903 29C129.851 29 130.565 29.2066 131.046 29.6199C131.531 30.0332 131.774 30.6823 131.774 31.5673V36.5873H130.642ZM128.283 35.5092C128.858 35.5092 129.319 35.3497 129.665 35.0308C130.015 34.7073 130.19 34.2559 130.19 33.6764V33.0295L129.234 33.0699C128.488 33.0969 127.944 33.2227 127.603 33.4473C127.266 33.6674 127.097 34.0065 127.097 34.4647C127.097 34.7972 127.196 35.0555 127.394 35.2396C127.592 35.4193 127.888 35.5092 128.283 35.5092Z"/>
+            <path d="M140.109 36.5873H138.512V30.3746H136.457C136.331 31.9738 136.16 33.2227 135.945 34.1211C135.734 35.0195 135.455 35.6754 135.109 36.0887C134.768 36.502 134.323 36.7086 133.775 36.7086C133.429 36.7086 133.139 36.6592 132.906 36.5604V35.3205C133.072 35.3834 133.238 35.4148 133.404 35.4148C133.863 35.4148 134.222 34.9005 134.483 33.8718C134.748 32.8386 134.954 31.2596 135.103 29.1348H140.109V36.5873Z"/>
+            <path d="M145.634 36.7221C144.475 36.7221 143.568 36.3852 142.912 35.7113C142.261 35.033 141.935 34.1009 141.935 32.9149C141.935 31.6976 142.238 30.7407 142.845 30.0444C143.451 29.3481 144.285 29 145.345 29C146.329 29 147.106 29.2987 147.676 29.8962C148.247 30.4937 148.532 31.3157 148.532 32.3624V33.2182H143.566C143.588 33.9414 143.784 34.4984 144.152 34.8893C144.52 35.2756 145.039 35.4687 145.709 35.4687C146.149 35.4687 146.558 35.4283 146.935 35.3475C147.317 35.2621 147.726 35.1229 148.161 34.9297V36.2167C147.775 36.4009 147.384 36.5312 146.989 36.6075C146.594 36.6839 146.142 36.7221 145.634 36.7221ZM145.345 30.1994C144.842 30.1994 144.437 30.3589 144.132 30.6778C143.831 30.9968 143.651 31.4617 143.593 32.0727H146.975C146.966 31.4572 146.818 30.9923 146.531 30.6778C146.243 30.3589 145.848 30.1994 145.345 30.1994Z"/>
+            <path d="M154.111 36.7221C153.168 36.7221 152.436 36.3829 151.915 35.7046H151.82C151.883 36.3335 151.915 36.7153 151.915 36.8501V39.9025H150.331V29.1348H151.611C151.647 29.274 151.721 29.6064 151.834 30.132H151.915C152.409 29.3773 153.15 29 154.138 29C155.068 29 155.791 29.3369 156.308 30.0107C156.829 30.6846 157.09 31.6302 157.09 32.8476C157.09 34.0649 156.825 35.015 156.294 35.6979C155.769 36.3807 155.041 36.7221 154.111 36.7221ZM153.727 30.2938C153.098 30.2938 152.638 30.4779 152.346 30.8463C152.058 31.2146 151.915 31.8031 151.915 32.6117V32.8476C151.915 33.755 152.058 34.4131 152.346 34.8219C152.633 35.2262 153.103 35.4283 153.754 35.4283C154.302 35.4283 154.724 35.2037 155.021 34.7545C155.317 34.3053 155.466 33.6651 155.466 32.8341C155.466 31.9985 155.317 31.3674 155.021 30.9406C154.729 30.5094 154.298 30.2938 153.727 30.2938Z"/>
+            <path d="M162.184 36.7221C161.025 36.7221 160.117 36.3852 159.461 35.7113C158.81 35.033 158.484 34.1009 158.484 32.9149C158.484 31.6976 158.788 30.7407 159.394 30.0444C160 29.3481 160.834 29 161.894 29C162.878 29 163.655 29.2987 164.225 29.8962C164.796 30.4937 165.081 31.3157 165.081 32.3624V33.2182H160.115C160.137 33.9414 160.333 34.4984 160.701 34.8893C161.07 35.2756 161.588 35.4687 162.258 35.4687C162.698 35.4687 163.107 35.4283 163.484 35.3475C163.866 35.2621 164.275 35.1229 164.711 34.9297V36.2167C164.324 36.4009 163.933 36.5312 163.538 36.6075C163.143 36.6839 162.691 36.7221 162.184 36.7221ZM161.894 30.1994C161.391 30.1994 160.987 30.3589 160.681 30.6778C160.38 30.9968 160.2 31.4617 160.142 32.0727H163.525C163.516 31.4572 163.367 30.9923 163.08 30.6778C162.792 30.3589 162.397 30.1994 161.894 30.1994Z"/>
+            <path d="M167.642 36.5873H165.87L167.945 33.5349C167.442 33.3911 167.046 33.1351 166.759 32.7667C166.471 32.3938 166.328 31.9334 166.328 31.3854C166.328 30.6801 166.579 30.1298 167.082 29.7345C167.586 29.3347 168.273 29.1348 169.144 29.1348H172.54V36.5873H170.95V33.7168H169.448L167.642 36.5873ZM167.871 31.3988C167.871 31.7807 168.015 32.0682 168.302 32.2613C168.594 32.45 168.985 32.5443 169.475 32.5443H170.95V30.3342H169.225C168.794 30.3342 168.459 30.4263 168.221 30.6104C167.988 30.7946 167.871 31.0574 167.871 31.3988Z"/>
+            <path d="M0 21.5989H11.6611C16.2601 21.5989 18.6142 19.5161 18.6142 15.5512V15.4895C18.6142 12.5428 17.1175 10.7532 14.2334 10.244V9.96634C16.6498 9.50351 17.9126 7.92987 17.9126 5.36886V5.29173C17.9126 1.80505 15.7145 0 11.4117 0H0V21.5989ZM4.59897 8.84011V3.0547H10.0398C12.2379 3.0547 13.3292 4.01122 13.3292 5.89341V5.95512C13.3292 7.86816 12.2379 8.84011 10.0398 8.84011H4.59897ZM4.59897 18.5288V11.648H10.1801C12.5965 11.648 13.7969 12.7896 13.7969 15.0266V15.0884C13.7969 17.3717 12.5965 18.5288 10.1801 18.5288H4.59897Z"/>
+            <path d="M22.9462 0V21.5989H27.4828V0H22.9462Z"/>
+            <path d="M36.9751 22C40.6387 22 43.3046 20.3801 44.2867 17.6339L44.5985 17.7111C44.0061 20.7041 44.6297 22 48.2153 22C48.6674 22 49.1195 21.9537 49.4937 21.892L50.0237 19.223L49.2443 19.2076C48.3868 19.1921 48.1374 18.9916 48.1374 17.8962V10.4755C48.1374 6.80365 45.6742 5.04488 40.4205 5.04488C34.8393 5.04488 32.0176 7.2202 32.2514 10.9846L36.7257 11.3548C36.5386 8.87097 37.817 7.74474 40.3269 7.74474C42.5718 7.74474 43.6319 8.56241 43.6319 10.4292V11.3394L39.2045 12.1417C34.777 12.9593 31.8461 14.3478 31.8461 17.7419V17.7882C31.8461 20.4727 33.6857 22 36.9751 22ZM38.7835 19.007C37.2557 19.007 36.4295 18.467 36.4295 17.3562V17.3254C36.4295 15.7363 37.8793 15.0884 40.7478 14.533L43.6319 13.9776V14.7335C43.6319 17.2174 41.3714 19.007 38.7835 19.007Z"/>
+            <path d="M53.8414 21.5989H58.378V14.0701C58.378 10.4292 60.1084 8.17672 62.9769 8.17672C65.1127 8.17672 66.1728 9.27209 66.1728 11.3703V21.5989H70.7095V10.2903C70.7095 6.89621 68.6984 5.10659 64.9568 5.10659C61.5583 5.10659 59.2354 6.58766 57.8635 9.67321L57.5517 9.53436C58.1753 7.69846 58.3936 6.60309 58.3936 5.39972H53.8414V21.5989Z"/>
+            <path d="M84.2083 21.9846C89.5556 21.9846 92.5488 19.8555 93.0009 15.7363L88.4175 15.2272C88.2305 17.8191 86.7962 19.1304 84.2239 19.1304C81.3398 19.1304 79.8432 17.3408 79.8432 13.8079V13.0519C79.8432 9.59607 81.3554 7.85273 84.1771 7.85273C86.7806 7.85273 88.1369 9.28752 88.3396 12.1571L92.8606 11.648C92.502 7.28191 89.618 5.01403 84.1927 5.01403C78.2998 5.01403 75.1974 7.86816 75.1974 13.3296V13.5302C75.1974 19.0842 78.2686 21.9846 84.2083 21.9846Z"/>
+            <path d="M97.5201 21.5989H102.057V14.0701C102.057 10.4292 103.772 8.19215 106.656 8.19215C108.791 8.19215 109.852 9.27209 109.852 11.3703V21.5989H114.388V10.2903C114.388 6.89621 112.362 5.10659 108.636 5.10659C105.206 5.10659 102.899 6.58766 101.542 9.65778L101.215 9.53436C101.823 7.80645 102.041 6.52595 102.057 4.9986V0H97.5201V21.5989Z"/>
+            <path d="M123.803 22C127.466 22 130.132 20.3801 131.114 17.6339L131.426 17.7111C130.833 20.7041 131.457 22 135.043 22C135.495 22 135.947 21.9537 136.321 21.892L136.851 19.223L136.072 19.2076C135.214 19.1921 134.965 18.9916 134.965 17.8962V10.4755C134.965 6.80365 132.502 5.04488 127.248 5.04488C121.667 5.04488 118.845 7.2202 119.079 10.9846L123.553 11.3548C123.366 8.87097 124.644 7.74474 127.154 7.74474C129.399 7.74474 130.459 8.56241 130.459 10.4292V11.3394L126.032 12.1417C121.604 12.9593 118.673 14.3478 118.673 17.7419V17.7882C118.673 20.4727 120.513 22 123.803 22ZM125.611 19.007C124.083 19.007 123.257 18.467 123.257 17.3562V17.3254C123.257 15.7363 124.707 15.0884 127.575 14.533L130.459 13.9776V14.7335C130.459 17.2174 128.199 19.007 125.611 19.007Z"/>
+            <path d="M140.669 21.5989H145.205V14.8261C145.205 10.5989 146.53 9.04067 149.991 8.79383L152.221 8.62412L151.691 4.8906C148.027 5.1683 146.328 6.30996 144.644 9.67321L144.348 9.53436C145.081 7.37447 145.252 6.51052 145.221 5.39972H140.669V21.5989Z"/>
+            <path d="M162.243 21.892C165.61 21.892 167.809 20.3492 168.915 17.5568L169.243 17.6648C168.713 19.3619 168.432 20.7041 168.417 21.5989H173V0H168.463V4.39691C168.463 6.09397 168.697 7.46704 169.258 9.3338L168.947 9.45722C167.84 6.68022 165.626 5.07574 162.243 5.07574C157.566 5.07574 155.103 7.89902 155.103 13.2987V13.6844C155.103 19.0687 157.566 21.892 162.243 21.892ZM163.958 19.115C161.152 19.115 159.686 17.3408 159.686 13.8387V13.129C159.686 9.6115 161.152 7.82188 163.958 7.82188C166.889 7.82188 168.463 9.70407 168.463 13.2062V13.7616C168.463 17.2482 166.889 19.115 163.958 19.115Z"/>
+          </svg>
+        </div>
+
+        <div id="header-burger-menu" class="header__burger burger" tabindex="0" role="button" aria-controls="header-top-wrapper" aria-expanded="false" aria-label="Меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+
+
+        <div id="header-top-wrapper" class="header__top-wrapper flex" aria-labelledby="header-burger-menu">
+          <div class="header__top-wrapper-scroll flex">
+
+            <nav class="nav header__nav">
+              <ul class="nav__list flex">
+
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">
+                    О нас
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#gallery" class="nav__link">
+                    Галерея
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#catalog" class="nav__link">
+                    Каталог
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#events" class="nav__link">
+                    События
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#projects" class="nav__link">
+                    Проекты
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link">
+                    Контакты
+                  </a>
+                </li>
+
+              </ul>
+            </nav>
+
+            <a href="#" class="header__login-link" aria-label="Войти в аккаунт">
+              <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"/>
+              </svg>
+              Войти
+            </a>
+
+          </div>
+        </div>
+
+        <div class="header__search-mobile">
+
+          <form id="header-search-mobile-form" class="header__search-mobile-form" action="" method="POST">
+
+            <input type="search" placeholder="" name="search">
+
+            <button class="header__search-mobile-close" type="button" aria-controls="header-search-mobile-form" aria-label="Закрыть поиск">
+              <span class="header__search-mobile-close-line"></span>
+              <span class="header__search-mobile-close-line"></span>
+            </button>
+
+          </form>
+
+          <button class="header__search-mobile-open" type="button" aria-controls="header-search-mobile-form" aria-label="Открыть поиск">
+            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"/>
+            </svg>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container flex">
+        <ul class="header__dropdowns-list flex">
+
+          <li class="header__dropdowns-list-item header__dropdown-realism">
+
+            <button class="header__dropdown-btn" id="dd-btn-1" aria-controls="dd-content-1" aria-expanded="false" type="button">
+              <span>Реализм</span>
+            </button>
+
+            <div class="header__dropdown-content-wrapper" id="dd-content-1" aria-labelledby="dd-btn-1" data-simplebar>
+              <ul class="header__dropdown-content">
+
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">
+                    Тинторетто
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">
+                    Фридрих
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">
+                    Леонардо
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">
+                    Верроккьо
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">
+                    Тинторетто
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">
+                    Фридрих
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">
+                    Леонардо
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">
+                    Верроккьо
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="header__dropdowns-list-item header__dropdown-impressionism">
+
+            <button class="header__dropdown-btn" id="dd-btn-2" aria-controls="dd-content-2" aria-expanded="false" type="button">
+              <span>Импрессионизм</span>
+            </button>
+
+            <div class="header__dropdown-content-wrapper" id="dd-content-2" aria-labelledby="dd-btn-2" data-simplebar>
+              <ul class="header__dropdown-content">
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Моне
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Сислей
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Мане
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Ренуар
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Моне
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Сислей
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Мане
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Ренуар
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="header__dropdowns-list-item header__dropdown-postimpressionism">
+
+            <button class="header__dropdown-btn" id="dd-btn-3" aria-controls="dd-content-3" aria-expanded="false" type="button">
+              <span>Постимпрессионизм</span>
+            </button>
+
+            <div class="header__dropdown-content-wrapper" id="dd-content-3" aria-labelledby="dd-btn-3" data-simplebar>
+              <ul class="header__dropdown-content">
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Ван Гог
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Сезанн
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Гоген
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Сёра
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Ван Гог
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Сезанн
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Гоген
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Сёра
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="header__dropdowns-list-item header__dropdown-avant-garde">
+
+            <button class="header__dropdown-btn" id="dd-btn-4" aria-controls="dd-content-4" aria-expanded="false" type="button">
+              <span>Авангард</span>
+            </button>
+
+            <div class="header__dropdown-content-wrapper" id="dd-content-4" aria-labelledby="dd-btn-4" data-simplebar>
+              <ul class="header__dropdown-content">
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Кандинский
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Маринетти
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Малевич
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Пикассо
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Кандинский
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Маринетти
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Малевич
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Пикассо
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="header__dropdowns-list-item header__dropdown-futurism">
+
+            <button class="header__dropdown-btn" id="dd-btn-5" aria-controls="dd-content-5" aria-expanded="false" type="button">
+              <span>Футуризм</span>
+            </button>
+
+            <div class="header__dropdown-content-wrapper" id="dd-content-5" aria-labelledby="dd-btn-5" data-simplebar>
+              <ul class="header__dropdown-content">
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Карра
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Прателла
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Северини
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Балла
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Карра
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Прателла
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Северини
+                  </a>
+                </li>
+
+                <li class="header__dropdown-item">
+                  <a href="" class="header__dropdown-link">
+                    Балла
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <form class="header__search-form" action="" role="search">
+          <input type="search" placeholder="Поиск по сайту">
+        </form>
+
+      </div>
+    </div>
+
+  </header>
+
+<main>
+
+  <h1 class="visually-hidden">Художественная галерея Blanchard</h1>
+
+  <section class="hero stop-scroll emerge" data-spin="true" id="hero" data-continue="true" data-style-1="transform: scale(2);" data-style-2="transform: scale(1); transition: opacity .5s ease-out, transform .5s cubic-bezier(0, 0.75, 0.25, 1);">
+    <div class="hero__bg">
+      <div class="container">
+
+        <div class="hero__content flex">
+
+          <h2 class="hero__title">
+            Прикоснитесь к прекрасному
+          </h2>
+
+          <p class="hero__descr">
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений
+          </p>
+
+          <a href="#contacts" class="hero__link">
+            Подписаться на&nbsp;рассылку
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+
+      <h2 class="about__title section-title emerge" data-effect="slide" data-up="0" data-right="50%" data-duration="1000" data-expose="true">
+        О&nbsp;нас
+      </h2>
+
+      <p class="about__descr emerge" data-effect="slide" data-duration="1000" data-expose="true">
+        Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery__wrapper flex">
+
+        <div class="gallery__content emerge" data-effect="slide" data-up="0" data-right="50%" data-duration="1000" data-expose="true">
+
+          <h2 class="gallery__title section-title">
+            Галерея
+          </h2>
+
+          <form class="gallery__filter-form filter-form" action="">
+
+            <div class="filter-form__name">
+              Фильтр:
+            </div>
+
+            <select class="filter-form__select" name="gallery-filter-select">
+              <option value="painting" selected>Живопись</option>
+              <option value="drawing">Рисунок</option>
+              <option value="sculpture">Скульптура</option>
+            </select>
+
+            <div class="filter-form__checkbox-group flex">
+              <label class="filter-form__checkbox" tabindex="0">
+                <input class="filter-form__check" type="checkbox" tabindex="-1" aria-label="Девятнадцатый век">
+                <span></span>
+                XIX век
+              </label>
+
+              <label class="filter-form__checkbox" tabindex="0">
+                <input class="filter-form__check" type="checkbox" tabindex="-1" aria-label="Двадцатый век">
+                <span></span>
+                XX век
+              </label>
+
+              <label class="filter-form__checkbox" tabindex="0">
+                <input class="filter-form__check" type="checkbox" tabindex="-1">
+                <span></span>
+                Современность
+              </label>
+            </div>
+
+          </form>
+
+        </div>
+
+        <div class="gallery__swiper swiper flex emerge" data-effect="slide" data-up="20%" data-duration="1000" data-expose="true">
+
+          <div class="gallery__btn-wrapper flex">
+            <div class="gallery__swiper-btn-prev gallery__swiper-btn"></div>
+            <div class="gallery__swiper-page"></div>
+            <div class="gallery__swiper-btn-next gallery__swiper-btn"></div>
+          </div>
+
+          <div class="gallery__swiper-wrapper swiper-wrapper">
+
+            <div class="gallery__swiper-slide swiper-slide" tabindex="0" data-swiper-slide="1"></div>
+            <div class="gallery__swiper-slide swiper-slide" tabindex="0" data-swiper-slide="2"></div>
+            <div class="gallery__swiper-slide swiper-slide" tabindex="0" data-swiper-slide="3"></div>
+            <div class="gallery__swiper-slide swiper-slide" tabindex="0" data-swiper-slide="4"></div>
+            <div class="gallery__swiper-slide swiper-slide" tabindex="0" data-swiper-slide="5"></div>
+            <div class="gallery__swiper-slide swiper-slide" tabindex="0" data-swiper-slide="6"></div>
+
+          </div>
+
+        </div>
+
+        <div class="gallery__modal flex">
+
+          <div class="gallery__modal-item" data-swiper-modal="1">
+            <button class="gallery__modal-btn flex" type="button"></button>
+            <div class="gallery__modal-wrapper">
+              <div class="gallery__modal-text">
+
+                <h3 class="gallery__modal-text-title">
+                  Казимир Малевич
+                </h3>
+                <span class="gallery__modal-text-subtitle">
+                  &quot;Торс&quot; (Фигура с розовым лицом)
+                </span>
+                <span class="gallery__modal-text-time">
+                  1928–1929
+                </span>
+                <p class="gallery__modal-text-descr">
+                  Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__modal-item" data-swiper-modal="2">
+            <button class="gallery__modal-btn flex" type="button"></button>
+            <div class="gallery__modal-wrapper">
+              <div class="gallery__modal-text">
+
+                <h3 class="gallery__modal-text-title">
+                  Казимир Малевич
+                </h3>
+                <span class="gallery__modal-text-subtitle">
+                  &laquo;Женщина с&nbsp;граблями&raquo;
+                </span>
+                <span class="gallery__modal-text-time">
+                  1931–1932
+                </span>
+                <p class="gallery__modal-text-descr">
+                  Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__modal-item" data-swiper-modal="3">
+            <button class="gallery__modal-btn flex" type="button"></button>
+            <div class="gallery__modal-wrapper">
+              <div class="gallery__modal-text">
+
+                <h3 class="gallery__modal-text-title">
+                  Казимир Малевич
+                </h3>
+                <span class="gallery__modal-text-subtitle">
+                  &quot;Уборка ржи&quot;
+                </span>
+                <span class="gallery__modal-text-time">
+                  1911
+                </span>
+                <p class="gallery__modal-text-descr">
+                  &laquo;Уборка ржи&raquo;&nbsp;&mdash; это образчик российского кубофутуризма, взявшего начало у&nbsp;французских мастеров. Работа относится к&nbsp;крестьянской серии картин, запечатлевшей рутинный уклад сельской жизни. В&nbsp;этот период у&nbsp;Малевича произошел перелом в&nbsp;направлении художественного стиля.Сюжет картины довольно прост: крестьяне убирают сено. Фигуры людей лишены сложных деталей и&nbsp;нарочно изображены укрупненными.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__modal-item" data-swiper-modal="4">
+            <button class="gallery__modal-btn flex" type="button"></button>
+            <div class="gallery__modal-wrapper">
+              <div class="gallery__modal-text">
+
+                <h3 class="gallery__modal-text-title">
+                  Иван Клюн
+                </h3>
+                <span class="gallery__modal-text-subtitle">
+                  &laquo;Супрематизм&raquo;
+                </span>
+                <span class="gallery__modal-text-time">
+                  1916
+                </span>
+                <p class="gallery__modal-text-descr">
+                  &laquo;Супрематизм&raquo;&nbsp;&mdash; знаковая работа нового периода творчества Клюна. Ограничив число форм в&nbsp;картине, он&nbsp;концентрирует внимание главным образом на&nbsp;исследовании принципа их&nbsp;сцепления и&nbsp;выявлении возможностей цвета.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__modal-item" data-swiper-modal="5">
+            <button class="gallery__modal-btn flex" type="button"></button>
+            <div class="gallery__modal-wrapper">
+              <div class="gallery__modal-text">
+
+                <h3 class="gallery__modal-text-title">
+                  Казимир Малевич
+                </h3>
+                <span class="gallery__modal-text-subtitle">
+                  &laquo;Женщина с&nbsp;вёдрами&raquo;
+                </span>
+                <span class="gallery__modal-text-time">
+                  1912
+                </span>
+                <p class="gallery__modal-text-descr">
+                  Стиль, известный как русский авангард характерен для искусства Российской Империи, а&nbsp;затем и&nbsp;Советского Союза в&nbsp;период с&nbsp;1890 по&nbsp;1930&nbsp;год. В&nbsp;это время внутри авангардного движения создавалось множество подстилей, имеющих свои уникальные отличительные черты. Одним из&nbsp;таких подстилей и&nbsp;стал супрематизм&nbsp;&mdash; движение, основанное
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__modal-item" data-swiper-modal="6">
+            <button class="gallery__modal-btn flex" type="button"></button>
+            <div class="gallery__modal-wrapper">
+              <div class="gallery__modal-text">
+
+                <h3 class="gallery__modal-text-title">
+                  Казимир Малевич
+                </h3>
+                <span class="gallery__modal-text-subtitle">
+                  &laquo;Супрематизм&raquo;
+                </span>
+                <span class="gallery__modal-text-time">
+                  1915-1916
+                </span>
+                <p class="gallery__modal-text-descr">
+                  Более взвешенно и&nbsp;продуманно &laquo;философию супрематизма&raquo; Малевич изложил к&nbsp;1927г. Здесь еще раз констатируется, что супрематизм&nbsp;&mdash; это высшая ступень Искусства, сущность которого беспредметность, осмысленная как чистое ощущение и&nbsp;чувствование, вне какого-либо подключения разума.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="container">
+
+      <h2 class="catalog__title section-title emerge" data-effect="slide" data-up="0" data-right="50%" data-duration="1000" data-expose="true">
+        Каталог
+      </h2>
+
+      <p class="catalog__descr emerge" data-effect="slide" data-duration="1000" data-expose="true">
+        Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
+      </p>
+
+      <div class="catalog__wrapper flex">
+
+        <div class="catalog__accordion emerge" data-effect="slide" data-up="20%" data-duration="1000" data-expose="true">
+
+          <div class="ac catalog__accordion-item">
+
+            <div class="catalog__accordion-header flex ac-trigger" tabindex="0" aria-label="С тысячи четырёхсотого по тысяча четыреста девяносто девятый годы">
+              <span>C 1400 по 1499 гг</span>
+              <div class="catalog__accordion-btn"></div>
+            </div>
+
+            <div class="ac-panel catalog__accordion-panel" aria-labelledby="ac-trigger-0">
+              <ul class="catalog__accordion-list flex">
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Бенедетто ди Биндо</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Бергоньоне, Амброджо</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Биссоло, Франческо</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Больтраффио, Джованни</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Бонсиньори, Франческо</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Боттичини, Рафаэлло</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Брамантино</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Бреа, Людовико</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Бьяджо д’Антонио Туччи</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Веккьетта</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Андреа Верроккьо</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn catalog__accordion-list-item-btn--active" type="button">Доменико Гирландайо</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Беноццо Гоццоли</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Граначчи, Франческо</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Грегорио ди Чекко</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Джованни да Удине</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Джованни ди Паоло</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Джорджоне</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Парентино, Бернардо</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Пезеллино</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Пьетро Перуджино</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Пизанелло</button>
+                </li>
+                <li class="catalog__accordion-list-item">
+                  <button class="catalog__accordion-list-item-btn" type="button">Пинтуриккьо</button>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="ac catalog__accordion-item">
+
+            <div class="catalog__accordion-header flex ac-trigger" tabindex="0" aria-label="С тысячи пятисотого по тысяча пятьсот девяносто девятый годы">
+              <span>C 1500 по 1599 гг</span>
+              <div class="catalog__accordion-btn"></div>
+            </div>
+
+            <div class="ac-panel catalog__accordion-panel" aria-labelledby="ac-trigger-1">
+
+              <div class="catalog__accordion-nodata">
+
+                <div class="catalog__accordion-nodata-rect"><div></div></div>
+
+                <p class="catalog__accordion-nodata-text">
+
+                  <span class="catalog__accordion-nodata-title">
+                    Здесь пока пусто
+                  </span>
+
+                  <span class="catalog__accordion-nodata-descr">
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                  </span>
+
+                  <a href="#gallery" class="catalog__accordion-nodata-link link-regular">
+                    В&nbsp;галерею
+                  </a>
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="ac catalog__accordion-item">
+
+            <div class="catalog__accordion-header flex ac-trigger" tabindex="0" aria-label="С тысячи шестисотого по тысяча шестьсот девяносто девятый годы">
+              <span>C 1600 по 1699 гг</span>
+              <div class="catalog__accordion-btn"></div>
+            </div>
+
+            <div class="ac-panel catalog__accordion-panel" aria-labelledby="ac-trigger-2">
+
+              <div class="catalog__accordion-nodata">
+
+                <div class="catalog__accordion-nodata-rect" aria-hidden="true"><div></div></div>
+
+                <p class="catalog__accordion-nodata-text">
+
+                  <span class="catalog__accordion-nodata-title">
+                    Здесь пока пусто
+                  </span>
+
+                  <span class="catalog__accordion-nodata-descr">
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                  </span>
+
+                  <a href="#gallery" class="catalog__accordion-nodata-link link-regular">
+                    В&nbsp;галерею
+                  </a>
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="ac catalog__accordion-item">
+
+            <div class="catalog__accordion-header flex ac-trigger" tabindex="0" aria-label="С тысячи семисотого по тысяча семьсот девяносто девятый годы">
+              <span>C 1700 по 1799 гг</span>
+              <div class="catalog__accordion-btn"></div>
+            </div>
+
+            <div class="ac-panel catalog__accordion-panel" aria-labelledby="ac-trigger-3">
+
+              <div class="catalog__accordion-nodata">
+
+                <div class="catalog__accordion-nodata-rect" aria-hidden="true"><div></div></div>
+
+                <p class="catalog__accordion-nodata-text">
+
+                  <span class="catalog__accordion-nodata-title">
+                    Здесь пока пусто
+                  </span>
+
+                  <span class="catalog__accordion-nodata-descr">
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                  </span>
+
+                  <a href="#gallery" class="catalog__accordion-nodata-link link-regular">
+                    В&nbsp;галерею
+                  </a>
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="ac catalog__accordion-item">
+
+            <div class="catalog__accordion-header flex ac-trigger" tabindex="0" aria-label="С тысячи восьмисотого по тысяча восемьсот девяносто девятый годы">
+              <span>C 1800 по 1899 гг</span>
+              <div class="catalog__accordion-btn"></div>
+            </div>
+
+            <div class="ac-panel catalog__accordion-panel" aria-labelledby="ac-trigger-4">
+
+              <div class="catalog__accordion-nodata">
+
+                <div class="catalog__accordion-nodata-rect" aria-hidden="true"><div></div></div>
+
+                <p class="catalog__accordion-nodata-text">
+
+                  <span class="catalog__accordion-nodata-title">
+                    Здесь пока пусто
+                  </span>
+
+                  <span class="catalog__accordion-nodata-descr">
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                  </span>
+
+                  <a href="#gallery" class="catalog__accordion-nodata-link link-regular">
+                    В&nbsp;галерею
+                  </a>
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="ac catalog__accordion-item">
+
+            <div class="catalog__accordion-header flex ac-trigger" tabindex="0" aria-label="С тысячи девятисотого по тысяча девятьсот девяносто девятый годы">
+              <span>C 1900 по 1999 гг</span>
+              <div class="catalog__accordion-btn"></div>
+            </div>
+
+            <div class="ac-panel catalog__accordion-panel" aria-labelledby="ac-trigger-5">
+
+              <div class="catalog__accordion-nodata">
+
+                <div class="catalog__accordion-nodata-rect" aria-hidden="true"><div></div></div>
+
+                <p class="catalog__accordion-nodata-text">
+
+                  <span class="catalog__accordion-nodata-title">
+                    Здесь пока пусто
+                  </span>
+
+                  <span class="catalog__accordion-nodata-descr">
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                  </span>
+
+                  <a href="#gallery" class="catalog__accordion-nodata-link link-regular">
+                    В&nbsp;галерею
+                  </a>
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="ac catalog__accordion-item">
+
+            <div class="catalog__accordion-header flex ac-trigger" tabindex="0" aria-label="С двухтысячного года">
+              <span>C 2000 г</span>
+              <div class="catalog__accordion-btn"></div>
+            </div>
+
+            <div class="ac-panel catalog__accordion-panel" aria-labelledby="ac-trigger-6">
+
+              <div class="catalog__accordion-nodata">
+
+                <div class="catalog__accordion-nodata-rect" aria-hidden="true"><div></div></div>
+
+                <p class="catalog__accordion-nodata-text">
+
+                  <span class="catalog__accordion-nodata-title">
+                    Здесь пока пусто
+                  </span>
+
+                  <span class="catalog__accordion-nodata-descr">
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                  </span>
+
+                  <a href="#gallery" class="catalog__accordion-nodata-link link-regular">
+                    В&nbsp;галерею
+                  </a>
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="catalog__content-wrapper emerge" data-effect="slide" data-up="20%" data-duration="1000" data-expose="true">
+
+          <article class="catalog__content catalog__content--active" data-catalog-content="Доменико Гирландайо">
+
+            <picture class="catalog__content-img" data-spin="true">
+              <source srcset="img/catalog/320-Domenico-Ghirlandaio.jpg" media="(max-width: 320.5px)">
+              <source srcset="img/catalog/576-Domenico-Ghirlandaio.jpg" media="(max-width: 576.5px)">
+              <source srcset="img/catalog/1024-Domenico-Ghirlandaio.jpg" media="(max-width: 1024.5px)">
+              <img src="img/catalog/1920-Domenico-Ghirlandaio.jpg" alt="Картина Доменико Гирландайо">
+            </picture>
+
+            <h3 class="catalog__content-name">
+              Доменико Гирландайо
+            </h3>
+
+            <span class="catalog__content-date">
+              2 июня 1448–11 января 1494
+            </span>
+
+            <p class="catalog__content-text">
+              Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+            </p>
+
+          </article>
+
+          <article class="catalog__content" data-catalog-content="Бенедетто ди Биндо">
+
+            <picture class="catalog__content-img" data-spin="true">
+              <source srcset="img/catalog/320-Benedetto-di-Bindo.jpg" media="(max-width: 320.5px)">
+              <source srcset="img/catalog/576-Benedetto-di-Bindo.jpg" media="(max-width: 576.5px)">
+              <source srcset="img/catalog/1024-Benedetto-di-Bindo.jpg" media="(max-width: 1024.5px)">
+              <img src="img/catalog/1920-Benedetto-di-Bindo.jpg" alt="Картина Бенедетто ди Биндо">
+            </picture>
+
+            <h3 class="catalog__content-name">
+              Бенедетто ди Биндо
+            </h3>
+
+            <span class="catalog__content-date">
+              ок. 1380—85-19 сентября 1417
+            </span>
+
+            <p class="catalog__content-text">
+              Творчество Бенедетто ди&nbsp;Биндо протекало в&nbsp;русле предначертанном Симоне Мартини. Специалисты полагают, что он&nbsp;был учеником Паоло ди&nbsp;Джованни Феи. В&nbsp;ранних его работах ощущается подражание Таддео ди&nbsp;Бартоло. Бенедетто ди&nbsp;Биндо приписывают авторство фрески &laquo;Вознесение Марии&raquo; в&nbsp;церкви Сан Никколо дель Кармине в&nbsp;Сиене, диптих &laquo;Мадонна Умиление&raquo; или &laquo;Пресвятая Дева Мария с&nbsp;младенцем и&nbsp;святой Иероним, переводящий евангелие от&nbsp;Иоанна&raquo; (1400&ndash;1405, Филадельфия, Музей изобразительного искусства), а&nbsp;также несколько станковых произведений, хранящихся в&nbsp;разных музеях. Умер сиенский живописец Бенедетто ди&nbsp;Биндо 19&nbsp;сентября 1417&nbsp;в Перудже.
+            </p>
+
+          </article>
+
+          <article class="catalog__content" data-catalog-content="Бергоньоне, Амброджо">
+
+            <picture class="catalog__content-img" data-spin="true">
+              <source srcset="img/catalog/320-Bergognone-Ambrogio.jpg" media="(max-width: 320.5px)">
+              <source srcset="img/catalog/576-Bergognone-Ambrogio.jpg" media="(max-width: 576.5px)">
+              <source srcset="img/catalog/1024-Bergognone-Ambrogio.jpg" media="(max-width: 1024.5px)">
+              <img src="img/catalog/1920-Bergognone-Ambrogio.jpg" alt="Картина Бергоньоне Амброджо">
+            </picture>
+
+            <h3 class="catalog__content-name">
+              Бергоньоне, Амброджо
+            </h3>
+
+            <span class="catalog__content-date">
+              1453-1523
+            </span>
+
+            <p class="catalog__content-text">
+              Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в монастырской обители картезианцев Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане в&nbsp;базилике Сант-Эусторджо и&nbsp;церкви Сан-Сатиро, после 1497&nbsp;&mdash; в&nbsp;Лоди, в&nbsp;1512&nbsp;&mdash; в&nbsp;Бергамо, незадолго до&nbsp;смерти&nbsp;&mdash; снова в&nbsp;Милане, в&nbsp;базилике Сан-Симпличано.Его завещание датировано 4&nbsp;апреля 1523, в&nbsp;том&nbsp;же году он&nbsp;умер. Одним из&nbsp;его учеников считают Бернардино Луини.Работы Бергоньоне представлены в&nbsp;музеях Бергамо, Милана (пинакотека Брера, музей Польди-Пеццоли), Турина, Парижа, Лондона, Нью-Йорка и&nbsp;др., одно из&nbsp;его полотен (Иаков Зеведеев, ок.&nbsp;1500) находится в&nbsp;Эрмитаже.
+            </p>
+
+          </article>
+
+          <article class="catalog__content" data-catalog-content="Биссоло, Франческо">
+
+            <picture class="catalog__content-img" data-spin="true">
+              <source srcset="img/catalog/320-Bissolo-Francesco.jpg" media="(max-width: 320.5px)">
+              <source srcset="img/catalog/576-Bissolo-Francesco.jpg" media="(max-width: 576.5px)">
+              <source srcset="img/catalog/1024-Bissolo-Francesco.jpg" media="(max-width: 1024.5px)">
+              <img src="img/catalog/1920-Bissolo-Francesco.jpg" alt="Картина Биссоло Франческо">
+            </picture>
+
+            <h3 class="catalog__content-name">
+              Биссоло, Франческо
+            </h3>
+
+            <span class="catalog__content-date">
+              1470-20 апреля 1554
+            </span>
+
+            <p class="catalog__content-text">
+              Сын художника. Ученик Джованни Беллини. С&nbsp;1490 переехал в&nbsp;мастерскую Беллини. С&nbsp;1492 по&nbsp;1530 год работал в&nbsp;Венеции. Помогал учителю в&nbsp;работе над украшением Большого зала Совета Дворца дожей (Венеция). Принимал участие в&nbsp;создании украшений Церкви Иль Реденторе в&nbsp;Венеции.
+              Работы художника хранятся ныне во&nbsp;многих музеях мира. В&nbsp;санкт-петербургском Эрмитаже находится его картина &laquo;Богоматерь с&nbsp;Младенцем Христом&raquo;. В&nbsp;Британской Национальной галерее&nbsp;&mdash; &laquo;Мадонна с&nbsp;Младенцем со&nbsp;святыми и&nbsp;донатором&raquo;. Ряд его полотен находится в&nbsp;музеях Варшавы, Лос-Анджелеса (Музей Нортона Саймона и&nbsp;Los Angeles County Museum of&nbsp;Art), Дэйтоновском институте искусств (штат Огайо, США) и&nbsp;др.
+            </p>
+
+          </article>
+
+          <article class="catalog__content" data-catalog-content="Больтраффио, Джованни">
+
+            <picture class="catalog__content-img" data-spin="true">
+              <source srcset="img/catalog/320-Boltraffio-Giovanni.jpg" media="(max-width: 320.5px)">
+              <source srcset="img/catalog/576-Boltraffio-Giovanni.jpg" media="(max-width: 576.5px)">
+              <source srcset="img/catalog/1024-Boltraffio-Giovanni.jpg" media="(max-width: 1024.5px)">
+              <img src="img/catalog/1920-Boltraffio-Giovanni.jpg" alt="Картина Больтраффио Джованни">
+            </picture>
+
+            <h3 class="catalog__content-name">
+              Больтраффио, Джованни
+            </h3>
+
+            <span class="catalog__content-date">
+              1467-1516
+            </span>
+
+            <p class="catalog__content-text">
+              Вазари сообщает, что художник происходил из&nbsp;аристократической семьи. Воспитанный в&nbsp;традициях Фоппы, Бернардо Дзенале и&nbsp;Амброджо Бергоньоне, он&nbsp;прошёл обучение в&nbsp;мастерской Леонардо. Его первое произведение &laquo;Воскресение Христа, святой Леонард и&nbsp;святая Лючия&raquo; выполнено в&nbsp;1491 году совместно с&nbsp;Марко д&rsquo;Оджоно для миланской церкви Сан-Джованни-сул-Муро. Был придворным художником Лодовико Моро и&nbsp;славился своими психологическими портретами. Больтраффио умер в&nbsp;возрасте 49&nbsp;лет и&nbsp;был похоронен на&nbsp;кладбище церкви Св. Паулы в&nbsp;Комито. Историки искусства предполагают, что фигура Младенца на&nbsp;картине Леонардо да&nbsp;Винчи &laquo;Мадонна Литта&raquo; принадлежит кисти Джованни Антонио Больтраффио. Известны подготовительные рисунки Больтраффио, в&nbsp;точности воспроизводящие эту фигуру.
+            </p>
+
+          </article>
+
+          <article class="catalog__content" data-catalog-content="Бонсиньори, Франческо">
+
+            <picture class="catalog__content-img" data-spin="true">
+              <source srcset="img/catalog/320-Bonsignori-Francesco.jpg" media="(max-width: 320.5px)">
+              <source srcset="img/catalog/576-Bonsignori-Francesco.jpg" media="(max-width: 576.5px)">
+              <source srcset="img/catalog/1024-Bonsignori-Francesco.jpg" media="(max-width: 1024.5px)">
+              <img src="img/catalog/1920-Bonsignori-Francesco.jpg" alt="Картина Бонсиньори Франческо">
+            </picture>
+
+            <h3 class="catalog__content-name">
+              Бонсиньори, Франческо
+            </h3>
+
+            <span class="catalog__content-date">
+              1460-2 июля 1519
+            </span>
+
+            <p class="catalog__content-text">
+              Был итальянским художником и&nbsp;рисовальщиком, отличавшимся превосходным мастерством в&nbsp;религиозных сюжетах, портретах, архитектурной перспективе и&nbsp;животных. Он&nbsp;родился в&nbsp;Вероне и&nbsp;умер в&nbsp;Кальдьеро, городе недалеко от&nbsp;Вероны. Стиль Бонсиньори в&nbsp;ранний период находился под влиянием его учителя Либерале да Верона. После того, как он&nbsp;стал портретистом и&nbsp;придворным художником семьи Гонзага в&nbsp;Мантуе в&nbsp;1487&nbsp;году, на&nbsp;его стиль оказал влияние Андреа Мантенья, который также работал с&nbsp;Франческо Гонзага с&nbsp;1480-х годов. На&nbsp;поздний стиль Бонсиньори решающее влияние оказал Лоренцо Коста с&nbsp;точки зрения формы и&nbsp;цвета. Свой последний монументальный алтарь Поклонение блаженной Осанны Андреаси (Пал Дукале, Мантуя) он&nbsp;изготовил в&nbsp;1519 году незадолго до&nbsp;своей смерти.
+            </p>
+
+          </article>
+
+          <div class="catalog__content catalog-unknown" data-catalog-content="unknown">
+
+            <div class="catalog__content-img flex" data-spin="true">
+              <svg viewBox="0 0 236 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M39.7355 46.8043C45.8078 46.8043 50.7488 41.8632 50.7488 35.7909C50.7488 29.7186 45.8078 24.7776 39.7355 24.7776C33.6632 24.7776 28.7222 29.7186 28.7222 35.7909C28.7222 41.8632 33.6632 46.8043 39.7355 46.8043V46.8043ZM39.7355 31.0709C42.3386 31.0709 44.4555 33.1878 44.4555 35.7909C44.4555 38.394 42.3386 40.5109 39.7355 40.5109C37.1324 40.5109 35.0155 38.394 35.0155 35.7909C35.0155 33.1878 37.1332 31.0709 39.7355 31.0709Z"/>
+                <path d="M182.909 89.2843C182.909 95.3566 187.85 100.298 193.922 100.298C199.994 100.298 204.935 95.3566 204.935 89.2843C204.935 83.212 199.994 78.271 193.922 78.271C187.85 78.271 182.909 83.212 182.909 89.2843V89.2843ZM193.922 84.5643C196.525 84.5643 198.642 86.6812 198.642 89.2843C198.642 91.8874 196.525 94.0043 193.922 94.0043C191.319 94.0043 189.202 91.8874 189.202 89.2843C189.202 86.6812 191.32 84.5643 193.922 84.5643Z"/>
+                <path d="M206.509 55.0872C208.476 55.0872 210.071 53.492 210.071 51.5244C210.071 49.5567 208.476 47.9615 206.509 47.9615C204.541 47.9615 202.946 49.5567 202.946 51.5244C202.946 53.492 204.541 55.0872 206.509 55.0872Z"/>
+                <path d="M55.4686 67.6738C57.4363 67.6738 59.0314 66.0787 59.0314 64.111C59.0314 62.1433 57.4363 60.5482 55.4686 60.5482C53.5009 60.5482 51.9058 62.1433 51.9058 64.111C51.9058 66.0787 53.5009 67.6738 55.4686 67.6738Z"/>
+                <path d="M171.757 40.6495C172.371 41.2639 173.177 41.5714 173.982 41.5714C174.786 41.5714 175.592 41.2639 176.206 40.6495L179.762 37.0937L183.318 40.6495C183.932 41.2639 184.738 41.5714 185.543 41.5714C186.347 41.5714 187.153 41.2639 187.767 40.6495C188.996 39.4207 188.996 37.4289 187.767 36.2001L184.212 32.6444L187.767 29.0886C188.996 27.8598 188.996 25.868 187.767 24.6392C186.538 23.4105 184.547 23.4105 183.318 24.6392L179.762 28.195L176.206 24.6392C174.978 23.4105 172.986 23.4105 171.757 24.6392C170.528 25.868 170.528 27.8598 171.757 29.0886L175.313 32.6444L171.757 36.2001C170.528 37.4289 170.528 39.4199 171.757 40.6495V40.6495Z"/>
+                <path d="M27.01 106.729C27.6243 107.344 28.4299 107.651 29.2347 107.651C30.0394 107.651 30.845 107.344 31.4593 106.729L35.0151 103.174L38.5708 106.729C39.1852 107.344 39.9907 107.651 40.7955 107.651C41.6003 107.651 42.4058 107.344 43.0202 106.729C44.249 105.501 44.249 103.509 43.0202 102.28L39.4645 98.7243L43.0202 95.1686C44.249 93.9398 44.249 91.948 43.0202 90.7192C41.7914 89.4904 39.7996 89.4904 38.5708 90.7192L35.0151 94.2749L31.4593 90.7192C30.2306 89.4904 28.2387 89.4904 27.01 90.7192C25.7812 91.948 25.7812 93.9398 27.01 95.1686L30.5657 98.7243L27.01 102.28C25.7812 103.509 25.7812 105.5 27.01 106.729V106.729Z"/>
+                <path d="M134.135 108.164C135.873 108.164 137.282 106.755 137.282 105.018C137.282 103.28 135.873 101.871 134.135 101.871C132.398 101.871 130.989 103.28 130.989 105.018C130.989 106.755 132.398 108.164 134.135 108.164Z"/>
+                <path d="M102.669 108.164C104.406 108.164 105.815 106.755 105.815 105.018C105.815 103.28 104.406 101.871 102.669 101.871C100.931 101.871 99.522 103.28 99.522 105.018C99.522 106.755 100.931 108.164 102.669 108.164Z"/>
+                <path d="M205.249 155.994C201.258 152.998 200.923 148.158 200.536 142.557C199.93 133.823 199.177 122.958 181.726 120.775C172.833 119.672 164.017 122.521 156.888 128.811C150.963 134.044 146.779 141.182 144.829 148.901L132.563 143.328V140.789C132.563 140.76 132.547 140.735 132.546 140.706C144.589 134.952 153.745 124.23 157.46 111.305C159.553 111.36 161.479 110.797 163.381 109.612C166.301 107.79 168.277 104.827 168.664 101.681C169.054 98.5277 168.077 95.366 165.991 93.0029C164.556 91.3832 162.694 90.237 160.647 89.6753C160.641 89.1223 160.619 87.1116 160.611 86.9023C160.769 86.5247 160.884 72.8768 160.884 72.8768C161.612 72.7903 162.322 72.6581 162.992 72.4261C165.352 71.6119 167.153 69.9402 168.339 67.4606H168.342C172.436 58.9064 165.121 46.7878 151.223 37.4579C152.197 34.9925 152.299 32.3037 151.411 29.7832C150.43 27.0086 148.433 24.7808 145.781 23.5111C143.129 22.2359 140.142 22.0762 137.362 23.0533C134.838 23.9446 132.806 25.7083 131.497 28.0101C115.517 23.0297 101.489 24.9256 97.3894 33.4798C96.4667 35.4071 96.2676 37.421 96.7153 39.3711C83.2483 45.5284 75.8686 57.1694 75.9252 72.3616L75.9653 77.5575C75.996 80.498 76.0739 86.0071 76.1321 86.2533C76.1313 86.2989 76.1644 88.8996 76.1644 89.6682C74.2716 90.1811 72.5473 91.1983 71.1462 92.6489C69.0537 94.8217 67.9594 97.6796 68.0672 100.696C68.1836 104.064 70.0952 107.316 73.1742 109.393C75.1197 110.705 77.0706 111.347 79.1907 111.313C82.4821 123.338 90.4636 133.428 101.113 139.555C101.112 139.581 101.098 139.603 101.098 139.63V143.327L76.0196 154.724C64.4934 159.963 57.0444 171.671 57.0444 184.547V210.429C57.0444 212.169 58.4518 213.576 60.1911 213.576H173.471C175.21 213.576 176.618 212.169 176.618 210.429V195.941C178.168 196.136 179.736 196.269 181.338 196.269C195.237 196.269 209.974 187.275 213.523 176.63C214.959 172.318 215.795 163.904 205.249 155.994V155.994ZM139.452 28.991C140.644 28.5733 141.923 28.6465 143.056 29.1846C144.949 30.0932 145.939 32.1015 145.674 34.0745C144.386 33.3657 143.066 32.6758 141.698 32.0205C140.342 31.3715 138.99 30.7791 137.642 30.2245C138.151 29.6904 138.737 29.242 139.452 28.991V28.991ZM103.062 36.1969C104.479 33.2438 108.901 31.5257 115.102 31.5257C121.583 31.5257 130.009 33.4003 138.981 37.6963C156.54 46.1097 165.553 58.7027 162.662 64.7443C162.084 65.9518 161.435 66.305 160.935 66.4804C157.272 67.7344 148.585 63.4352 139.366 58.8875C137.101 57.7689 134.726 56.5952 132.243 55.4057C129.806 54.2383 127.391 53.1165 125.049 52.0286C114.886 47.3054 104.383 42.4194 102.893 38.2682C102.648 37.5822 102.696 36.9616 103.062 36.1969V36.1969ZM99.9131 44.8204C104.327 49.3272 112.566 53.1661 122.394 57.7351C124.717 58.8136 127.11 59.9259 129.526 61.0847C131.984 62.2615 134.338 63.4234 136.581 64.5295C143.723 68.0569 149.654 70.9778 154.589 72.2672V84.1655C145.173 91.2455 134.526 93.928 124.462 91.7277C115.439 89.7579 107.958 84.0396 103.938 76.0408C103.48 75.1314 102.61 74.4981 101.605 74.3447C100.594 74.1819 99.5771 74.5288 98.8699 75.2604C94.8107 79.4392 88.8832 81.9502 82.2917 82.3617C82.2886 80.8434 82.2705 79.1906 82.2547 77.4969L82.2146 72.3372C82.1556 56.1208 91.6177 48.443 99.9131 44.8204ZM84.6462 107.089C84.4653 106.207 83.9146 105.445 83.1342 104.993C82.3539 104.545 81.4162 104.458 80.5595 104.738C79.3425 105.153 78.2176 105.209 76.6938 104.176C75.299 103.236 74.4014 101.816 74.3519 100.473C74.3055 99.1767 74.7759 97.9502 75.6735 97.0188C76.5711 96.0906 77.7755 95.5777 79.0687 95.5777C79.9199 95.5777 80.7679 95.215 81.3611 94.6069C82.2351 93.7085 82.5049 92.9376 82.4506 88.6432C89.1821 88.2656 95.4275 86.07 100.321 82.3522C105.468 90.222 113.584 95.7964 123.119 97.8763C125.872 98.4789 128.653 98.777 131.44 98.777C139.267 98.7747 147.115 96.3919 154.421 91.8552C154.541 93.2932 154.828 93.9815 155.464 94.625C156.054 95.2244 156.893 95.5777 157.735 95.5777C159.088 95.5777 160.378 96.1582 161.272 97.1722C162.182 98.1988 162.588 99.5259 162.418 100.912C162.259 102.19 161.374 103.444 160.052 104.271C158.724 105.098 157.6 105.224 156.177 104.723C155.329 104.412 154.386 104.502 153.599 104.937C152.809 105.377 152.247 106.136 152.053 107.018C148.989 121.086 138.591 132.579 124.913 137.01L123.524 137.465C119.612 138.733 115.614 138.78 111.97 137.603C98.0565 133.126 87.5868 121.433 84.6462 107.089V107.089ZM110.041 143.595C112.425 144.364 114.905 144.744 117.422 144.744C120.093 144.744 122.8 144.314 125.467 143.45L126.27 143.188V144.351C126.27 149.556 122.035 153.791 116.83 153.791C111.624 153.791 107.39 149.556 107.39 144.351V142.552C108.274 142.898 109.129 143.302 110.041 143.595V143.595ZM170.322 207.284H151.442V191.551C151.442 189.812 150.035 188.404 148.295 188.404C146.556 188.404 145.149 189.812 145.149 191.551V207.284H85.3621V191.551C85.3621 189.812 83.9547 188.404 82.2154 188.404C80.4761 188.404 79.0687 189.812 79.0687 191.551V207.284H63.3354V184.548C63.3354 174.134 69.3369 164.675 78.6235 160.453L102.118 149.776C104.339 155.774 110.068 160.084 116.829 160.084C123.59 160.084 129.319 155.774 131.539 149.775L143.75 155.323C143.662 156.384 143.575 157.445 143.575 158.511C143.575 175.502 154.858 189.897 170.322 194.623V207.284ZM207.55 174.641C204.874 182.667 192.379 189.978 181.335 189.978C163.985 189.978 149.869 175.861 149.869 158.511C149.869 149.05 154.051 139.711 161.054 133.531C166.008 129.158 171.929 126.835 177.989 126.835C178.972 126.835 179.959 126.896 180.945 127.019C193.258 128.559 193.677 134.612 194.257 142.989C194.688 149.231 195.176 156.304 201.476 161.028C207.108 165.253 209.152 169.835 207.55 174.641V174.641Z"/>
+                <path d="M193.922 161.787C188.787 161.787 184.611 165.963 184.611 171.098C184.611 176.229 188.787 180.405 193.922 180.405C199.056 180.405 203.233 176.229 203.233 171.098C203.233 165.963 199.057 161.787 193.922 161.787V161.787ZM193.922 174.112C192.26 174.112 190.904 172.76 190.904 171.098C190.904 169.435 192.26 168.08 193.922 168.08C195.584 168.08 196.939 169.435 196.939 171.098C196.939 172.76 195.584 174.112 193.922 174.112Z"/>
+                <path d="M175.042 131.396C170.5 131.396 166.806 135.089 166.806 139.631C166.806 144.173 170.5 147.867 175.042 147.867C179.584 147.867 183.277 144.173 183.277 139.631C183.277 135.089 179.584 131.396 175.042 131.396ZM175.042 141.573C173.973 141.573 173.099 140.701 173.099 139.631C173.099 138.561 173.972 137.689 175.042 137.689C176.112 137.689 176.984 138.561 176.984 139.631C176.984 140.701 176.112 141.573 175.042 141.573Z"/>
+                <path d="M169.118 156.938C169.118 152.396 165.424 148.702 160.882 148.702C156.34 148.702 152.646 152.395 152.646 156.938C152.646 161.48 156.34 165.173 160.882 165.173C165.424 165.173 169.118 161.48 169.118 156.938ZM160.882 158.88C159.813 158.88 158.94 158.007 158.94 156.938C158.94 155.868 159.812 154.995 160.882 154.995C161.952 154.995 162.824 155.868 162.824 156.938C162.824 158.007 161.952 158.88 160.882 158.88Z"/>
+                <path d="M171.895 169.155C167.354 169.155 163.66 172.849 163.66 177.391C163.66 181.933 167.353 185.626 171.895 185.626C176.437 185.626 180.131 181.933 180.131 177.391C180.131 172.849 176.437 169.155 171.895 169.155ZM171.895 179.333C170.826 179.333 169.953 178.461 169.953 177.391C169.953 176.321 170.825 175.449 171.895 175.449C172.965 175.449 173.838 176.321 173.838 177.391C173.838 178.461 172.965 179.333 171.895 179.333Z"/>
+                <path d="M48.3028 136.131C47.7191 135.554 47.126 134.967 46.5486 134.361C46.5478 134.36 46.547 134.36 46.547 134.359C46.5462 134.359 46.5462 134.359 46.5462 134.358C44.1343 131.835 42.5271 129.536 42.5271 126.528C42.5271 122.53 40.4527 121.433 39.2145 121.136C34.3073 119.894 28.5607 129.525 25.5737 135.348C23.7793 138.847 21.6372 143.746 21.6372 147.209C21.6372 153.315 25.0049 158.599 29.9444 161.459L28.1241 201.882C27.9762 205.148 29.12 208.308 31.2613 210.545C33.1296 212.502 35.5817 213.578 38.1627 213.578C40.7438 213.578 43.1958 212.502 45.0641 210.545C47.2062 208.308 48.3493 205.149 48.2014 201.882L46.381 161.459C51.3205 158.598 54.689 153.314 54.689 147.209C54.6882 142.455 51.2953 139.094 48.3028 136.131V136.131ZM36.5642 129.622C37.1479 132.256 38.4294 134.447 39.9138 136.333C38.8015 137.16 37.7041 137.596 36.6319 137.639C35.1875 137.633 33.6205 136.966 32.3422 136.041C33.8659 133.334 35.363 131.15 36.5642 129.622ZM41.9143 202.165C41.9851 203.722 41.4746 205.195 40.5164 206.196C40.0428 206.694 39.2475 207.284 38.1627 207.284C37.0779 207.284 36.2818 206.694 35.809 206.196C34.8501 205.195 34.3403 203.722 34.4111 202.165L36.1504 163.531C36.8175 163.613 37.4736 163.735 38.1627 163.735C38.8518 163.735 39.5079 163.614 40.175 163.531L41.9143 202.165ZM38.1619 157.442C32.52 157.442 27.929 152.851 27.929 147.209C27.929 146.317 28.3962 144.42 29.5495 141.686C31.8151 143.136 34.12 143.936 36.447 143.936C36.5886 143.936 36.7294 143.932 36.8742 143.926C39.4513 143.827 41.9088 142.815 44.2161 140.941C46.4904 143.2 48.3949 145.181 48.3949 147.208C48.3949 152.851 43.8039 157.442 38.1619 157.442Z"/>
+              </svg>
+              <div class="catalog__content-img-text">
+                Х&nbsp;&mdash; Художник
+              </div>
+            </div>
+
+            <h3 class="catalog__content-name">
+              Что мы о нём знаем?
+            </h3>
+
+            <p class="catalog__content-text">
+              Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
+            </p>
+
+            <a href="#gallery" class="catalog__content-link link-regular">
+              В&nbsp;галерею
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="events" id="events">
+    <div class="container">
+
+      <h2 class="events__title section-title emerge" data-effect="slide" data-up="0" data-right="50%" data-duration="1000" data-expose="true">События</h2>
+
+      <div class="events__swiper-container emerge"  data-effect="slide" data-up="20%" data-duration="1000" data-expose="true">
+        <div class="events__swiper swiper">
+
+          <div class="events__swiper-btn events__swiper-btn-prev"></div>
+          <div class="events__swiper-btn events__swiper-btn-next"></div>
+
+          <div class="events__list swiper-wrapper">
+
+            <div class="events__item swiper-slide">
+
+              <article class="events__article event-article flex">
+
+                <picture class="event-article__img">
+                  <source srcset="img/events/320-events-1.jpg" media="(max-width: 320.5px)">
+                  <source srcset="img/events/576-events-1.jpg" media="(max-width: 576.5px)">
+                  <source srcset="img/events/874-events-1.jpg" media="(max-width: 874.5px)">
+                  <source srcset="img/events/1024-events-1.jpg" media="(max-width: 1024.5px)">
+                  <img src="img/events/1920-events-1.jpg" alt="Резьба по дереву стамеской">
+                </picture>
+
+                <div class="event-article__text">
+                  <div class="event-article__info">
+                    <div aria-label="Музей имени Щусева">Музей им. Щусева</div>с <time datetime="2022-03-20">20 марта</time> по <time datetime="2022-04-30">30 апреля</time>
+                  </div>
+
+                  <h3 class="event-article__title">
+                    Книжная гравюра в&nbsp;живом восприятии
+                  </h3>
+
+                  <p class="event-article__descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
+                  </p>
+
+                  <a href="" class="event-article__link" target="_blank">
+                    Подробнее
+                  </a>
+                </div>
+
+              </article>
+
+            </div>
+
+            <div class="events__item swiper-slide">
+
+              <article class="events__article event-article flex">
+
+                <picture class="event-article__img">
+                  <source srcset="img/events/320-events-2.jpg" media="(max-width: 320.5px)">
+                  <source srcset="img/events/576-events-2.jpg" media="(max-width: 576.5px)">
+                  <source srcset="img/events/874-events-2.jpg" media="(max-width: 874.5px)">
+                  <source srcset="img/events/1024-events-2.jpg" media="(max-width: 1024.5px)">
+                  <img src="img/events/1920-events-2.jpg" alt="Фотография: двое мужчин">
+                </picture>
+
+                <div class="event-article__text">
+                  <div class="event-article__info">
+                    <abbr title="Московский музей современного искусства" aria-label="Московский музей современного искусства"><span aria-hidden="true">ММОМА</span></abbr><time datetime="2022-03-24 19:00">24 марта 19:00</time>
+                  </div>
+
+                  <h3 class="event-article__title">
+                    &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
+                  </h3>
+
+                  <p class="event-article__descr">
+                    Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта
+                  </p>
+
+                  <a href="" class="event-article__link" target="_blank">
+                    Подробнее
+                  </a>
+                </div>
+
+              </article>
+
+            </div>
+
+            <div class="events__item swiper-slide">
+
+              <article class="events__article event-article flex">
+
+                <picture class="event-article__img">
+                  <source srcset="img/events/320-events-3.jpg" media="(max-width: 320.5px)">
+                  <source srcset="img/events/576-events-3.jpg" media="(max-width: 576.5px)">
+                  <source srcset="img/events/874-events-3.jpg" media="(max-width: 874.5px)">
+                  <source srcset="img/events/1024-events-3.jpg" media="(max-width: 1024.5px)">
+                  <img src="img/events/1920-events-3.jpg" alt="Помещение галереи">
+                </picture>
+
+                <div class="event-article__text">
+                  <div class="event-article__info">
+                    <div>Еврейский музей</div>c <time datetime="2022-03-31">31 марта</time> по <time datetime="2022-04-21">21 апреля</time>
+                  </div>
+
+                  <h3 class="event-article__title">
+                    Выставка &laquo;Формация 2020&raquo;
+                  </h3>
+
+                  <p class="event-article__descr">
+                    Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений
+                  </p>
+
+                  <a href="" class="event-article__link" target="_blank">
+                    Подробнее
+                  </a>
+                </div>
+
+              </article>
+
+            </div>
+
+            <div class="events__item swiper-slide">
+
+              <article class="events__article event-article flex">
+
+                <picture class="event-article__img">
+                  <source srcset="img/events/320-events-4.jpg" media="(max-width: 320.5px)">
+                  <source srcset="img/events/576-events-4.jpg" media="(max-width: 576.5px)">
+                  <source srcset="img/events/874-events-4.jpg" media="(max-width: 874.5px)">
+                  <source srcset="img/events/1024-events-4.jpg" media="(max-width: 1024.5px)">
+                  <img src="img/events/1920-events-4.jpg" alt="Абстрактная фотография">
+                </picture>
+
+                <div class="event-article__text">
+                  <div class="event-article__info">
+                    <abbr title="Мультимедиа арт музей, Москва" aria-label="Мультимедиа арт музей, Москва"><span aria-hidden="true">ММАМ</span></abbr>с <time datetime="2022-04-08">8 апреля</time> по <time datetime="2022-05-20">20 мая</time>
+                  </div>
+
+                  <h3 class="event-article__title">
+                    Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;
+                  </h3>
+
+                  <p class="event-article__descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
+                  </p>
+
+                  <a href="" class="event-article__link" target="_blank">
+                    Подробнее
+                  </a>
+                </div>
+
+              </article>
+
+            </div>
+
+            <div class="events__item swiper-slide">
+
+              <article class="events__article event-article flex">
+
+                <picture class="event-article__img">
+                  <source srcset="img/events/320-events-5.jpg" media="(max-width: 320.5px)">
+                  <source srcset="img/events/576-events-5.jpg" media="(max-width: 576.5px)">
+                  <source srcset="img/events/874-events-5.jpg" media="(max-width: 874.5px)">
+                  <source srcset="img/events/1024-events-5.jpg" media="(max-width: 1024.5px)">
+                  <img src="img/events/1920-events-5.jpg" alt="Подвешенные разноцветные ленты">
+                </picture>
+
+                <div class="event-article__text">
+                  <div class="event-article__info">
+                    <div>Третьяковка на Крымском валу</div>с <time datetime="2022-03-30">30 марта</time> по <time datetime="2022-04-30">30 апреля</time>
+                  </div>
+
+                  <h3 class="event-article__title">
+                    XXIV Международная биеннале молодого искусства
+                  </h3>
+
+                  <p class="event-article__descr">
+                    Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
+                  </p>
+
+                  <a href="" class="event-article__link" target="_blank">
+                    Подробнее
+                  </a>
+                </div>
+
+              </article>
+
+            </div>
+
+          </div>
+
+          <div class="events__swiper-pagination swiper-pagination"></div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+
+      <h2 class="projects__title section-title emerge" data-effect="slide" data-up="0" data-right="50%" data-duration="1000" data-expose="true">
+        Проекты
+      </h2>
+
+      <p class="projects__descr emerge" data-effect="slide" data-duration="1000" data-expose="true">
+        Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
+        <span class="projects-descr-tooltip" id="tt-0" tabindex="0" data-tooltip-content="Пример современных тенденций — современная методология разработки" aria-label="Всплывающая подсказка">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path class="projects-descr-tooltip-border" d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"/>
+            <path class="projects-descr-tooltip-symbol" d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"/>
+          </svg>
+        </span>
+        обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+        <span class="projects-descr-tooltip" id="tt-1" tabindex="0" data-tooltip-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции" aria-label="Всплывающая подсказка">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path class="projects-descr-tooltip-border" d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"/>
+            <path class="projects-descr-tooltip-symbol" d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"/>
+          </svg>
+        </span>
+        исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых
+        <span class="projects-descr-tooltip" id="tt-2" tabindex="0" data-tooltip-content="В стремлении повысить качество" aria-label="Всплывающая подсказка">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path class="projects-descr-tooltip-border" d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"/>
+            <path class="projects-descr-tooltip-symbol" d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"/>
+          </svg>
+        </span>
+        предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости. Подробнее:
+        <a class="link-regular" href="blanchard-art.ru/projects" target="_blank" lang="en">blanchard-art.ru/projects</a>
+      </p>
+
+      <div class="projects__swiper-title emerge" data-effect="slide" data-up="0" data-right="50%" data-duration="1000" data-expose="true">
+        Партнёры проектов:
+      </div>
+
+      <div class="projects__swiper-container emerge" data-effect="slide" data-up="20%" data-duration="1000" data-expose="true">
+
+        <div class="projects__swiper swiper">
+          <div class="projects__list swiper-wrapper" lang="en">
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-1-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-1.png" alt="Freeland Foundation" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-2-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-2.png" alt="Institute for Contemporary Art" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-3-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-3.png" alt="Workhouse art center" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-4-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-4.png" alt="1849 wine company" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-5-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-5.png" alt="Hiscox" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-6-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-6.png" alt="Camden arts centre" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-7-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-7.png" alt="Stassen premium belgian cider" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-8-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-8.png" alt="WATTS gallery artists village" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+            <div class="projects__item swiper-slide">
+              <a class="projects__item-link" href="#">
+                <div class="projects__item-link-box">
+
+                  <img src="img/projects/svg-img-9-hover.png" class="projects__item-link-box-img--hover" aria-hidden="true">
+
+                  <img src="img/projects/svg-img-9.png" alt="ESAD" class="projects__item-link-box-img">
+
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="projects__swiper-btn projects__swiper-btn-prev"></div>
+        <div class="projects__swiper-btn projects__swiper-btn-next"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2 class="contacts__title visually-hidden">Контакты</h2>
+
+      <div class="contacts__wrapper flex">
+
+        <div class="contacts__location emerge" data-effect="slide" data-down="100%" data-duration="1000" data-expose="true">
+          <div>Шоурум &#8470;&nbsp;4</div>Леонтьевский переулок, дом 5/1
+        </div>
+
+        <form class="contacts__form flex emerge" method="POST" action="#" data-effect="slide" data-down="100%" data-duration="1000" data-expose="true">
+
+          <div class="contacts__form-input-wrapper">
+            <input class="contacts__form-name contacts__form-input" name="name" type="text" placeholder="Имя*" aria-invalid="false" required>
+          </div>
+          <div class="contacts__form-input-wrapper">
+            <input id="contacts__form-tel" class="contacts__form-tel contacts__form-input" name="tel" type="tel" placeholder="Телефон*" aria-invalid="false" required>
+          </div>
+
+          <button class="contacts__form-btn" type="submit">
+            Заказать <span>обратный звонок</span>
+          </button>
+
+        </form>
+
+        <address class="contacts__adds emerge" data-effect="slide" data-down="100%" data-duration="1000" data-expose="true">
+
+          <div class="contacts__adds-text">Связаться в&nbsp;один клик</div>
+          <ul class="contacts__adds-list flex">
+
+            <li class="contacts__adds-list-item">
+              <a href="https://wa.me/" class="contacts__adds-link contacts__whatsapp" target="_blank">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Связаться с нами в ватсап">
+                  <path class="contacts__adds-list-item-bg" d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"/>
+                  <path d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="contacts__adds-list-item">
+              <a href="https://t.me/" class="contacts__adds-link contacts__telegram" target="_blank">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Связаться с нами в телеграм">
+                  <path class="contacts__adds-list-item-bg" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05321 19.7889L20.7168 14.7649C26.2711 12.4547 27.4251 12.0534 28.1774 12.0402C28.3429 12.0373 28.7128 12.0783 28.9524 12.2727C29.1548 12.4369 29.2104 12.6587 29.2371 12.8143C29.2637 12.9699 29.2969 13.3246 29.2705 13.6017C28.9695 16.7641 27.6671 24.4386 27.0046 27.9806C26.7242 29.4794 26.1726 29.9819 25.6378 30.0311C24.4763 30.138 23.5944 29.2635 22.4694 28.5261L18.0061 25.528C16.0314 24.2268 17.3115 23.5116 18.4369 22.3428C18.7314 22.0368 23.8487 17.3823 23.9477 16.96C23.9597 16.9072 23.9716 16.7104 23.8547 16.6064C23.7377 16.5024 23.565 16.5384 23.4405 16.5663C23.264 16.6064 20.452 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8355 22.9435C12.1214 22.9281 10.7478 22.5397 9.72661 22.2078C8.47408 21.8007 7.4786 21.5854 7.56532 20.8939C7.61044 20.5338 8.1064 20.1655 9.05317 19.789L9.05321 19.7889Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+
+        </address>
+
+      </div>
+
+    </div>
+
+    <div class="contacts__map" id="map" aria-label="Карта"></div>
+
+  </section>
+
+</main>
+
+  <footer class="footer">
+    <div class="container flex">
+
+      <div class="footer__logo logo">
+        <svg viewBox="0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.78965 32.7802L0.289746 29.1348H2.09561L3.79365 31.7425L5.50518 29.1348H7.29756L4.79092 32.7802L7.42559 36.5873H5.6332L3.79365 33.7977L1.96084 36.5873H0.168457L2.78965 32.7802Z"/>
+          <path d="M7.60078 29.1348H9.32578L10.8419 33.3597C11.071 33.9616 11.2237 34.5276 11.3001 35.0577H11.354C11.3944 34.8106 11.4686 34.5119 11.5764 34.1615C11.6842 33.8066 12.2547 32.1311 13.2879 29.1348H14.9994L11.8122 37.5778C11.2327 39.1276 10.2669 39.9025 8.91475 39.9025C8.56436 39.9025 8.22295 39.8644 7.89053 39.788V38.5347C8.12861 38.5886 8.40039 38.6155 8.70586 38.6155C9.46953 38.6155 10.0063 38.173 10.3163 37.2881L10.5926 36.5873L7.60078 29.1348Z"/>
+          <path d="M23.2808 39.222H21.8051V36.5873H16.6975V39.222H15.2353V35.3609H15.8417C16.3718 34.6018 16.7918 33.6854 17.1018 32.6117C17.4162 31.5336 17.6026 30.3746 17.661 29.1348H22.1892V35.3609H23.2808V39.222ZM20.6326 35.3609V30.3477H19.0289C18.9436 31.273 18.7639 32.185 18.4898 33.0834C18.2203 33.9818 17.8901 34.741 17.4993 35.3609H20.6326Z"/>
+          <path d="M31.2724 32.8476C31.2724 34.0649 30.9602 35.015 30.3357 35.6979C29.7113 36.3807 28.8421 36.7221 27.728 36.7221C27.0317 36.7221 26.4163 36.5648 25.8817 36.2504C25.3472 35.9359 24.9361 35.4845 24.6486 34.896C24.3611 34.3075 24.2174 33.6247 24.2174 32.8476C24.2174 31.6392 24.5273 30.6958 25.1473 30.0175C25.7672 29.3392 26.6409 29 27.7685 29C28.8466 29 29.7001 29.3481 30.329 30.0444C30.9579 30.7362 31.2724 31.6706 31.2724 32.8476ZM25.848 32.8476C25.848 34.5681 26.4837 35.4283 27.755 35.4283C29.0128 35.4283 29.6417 34.5681 29.6417 32.8476C29.6417 31.145 29.0083 30.2938 27.7415 30.2938C27.0767 30.2938 26.5938 30.5139 26.2928 30.9541C25.9963 31.3943 25.848 32.0255 25.848 32.8476Z"/>
+          <path d="M36.7708 32.7532V29.1348H38.2465V32.7532L41.117 29.1348H42.7881L39.8569 32.7397L43.0509 36.5873H41.3057L38.2465 32.8071V36.5873H36.7708V32.8071L33.7184 36.5873H31.9799L35.1671 32.7397L32.2427 29.1348H33.9138L36.7708 32.7532Z"/>
+          <path d="M47.4577 36.7221C46.2987 36.7221 45.3913 36.3852 44.7355 35.7113C44.0841 35.033 43.7584 34.1009 43.7584 32.9149C43.7584 31.6976 44.0616 30.7407 44.6681 30.0444C45.2745 29.3481 46.1078 29 47.168 29C48.1518 29 48.9289 29.2987 49.4994 29.8962C50.0699 30.4937 50.3552 31.3157 50.3552 32.3624V33.2182H45.3891C45.4115 33.9414 45.6069 34.4984 45.9753 34.8893C46.3437 35.2756 46.8625 35.4687 47.5318 35.4687C47.9721 35.4687 48.3809 35.4283 48.7582 35.3475C49.14 35.2621 49.5488 35.1229 49.9846 34.9297V36.2167C49.5982 36.4009 49.2074 36.5312 48.8121 36.6075C48.4168 36.6839 47.9653 36.7221 47.4577 36.7221ZM47.168 30.1994C46.6648 30.1994 46.2605 30.3589 45.9551 30.6778C45.6541 30.9968 45.4744 31.4617 45.416 32.0727H48.7986C48.7896 31.4572 48.6414 30.9923 48.3539 30.6778C48.0664 30.3589 47.6711 30.1994 47.168 30.1994Z"/>
+          <path d="M55.1596 36.7221C54.032 36.7221 53.174 36.3941 52.5855 35.7383C52.0016 35.0779 51.7096 34.1323 51.7096 32.9015C51.7096 31.6481 52.015 30.6846 52.626 30.0107C53.2414 29.3369 54.1286 29 55.2876 29C56.0737 29 56.7812 29.146 57.4102 29.438L56.9317 30.7115C56.2624 30.451 55.7099 30.3207 55.2741 30.3207C53.9849 30.3207 53.3402 31.1765 53.3402 32.888C53.3402 33.7235 53.4997 34.3524 53.8187 34.7747C54.1421 35.1925 54.6138 35.4014 55.2337 35.4014C55.939 35.4014 56.6061 35.2262 57.235 34.8758V36.2571C56.952 36.4233 56.6487 36.5424 56.3253 36.6143C56.0063 36.6861 55.6178 36.7221 55.1596 36.7221Z"/>
+          <path d="M64.5864 29.1348V30.3746H62.1606V36.5873H60.5704V30.3746H58.1446V29.1348H64.5864Z"/>
+          <path d="M72.4904 31.0417C72.4904 31.9222 71.9761 32.4545 70.9474 32.6387V32.6926C71.5224 32.76 71.9626 32.9419 72.2681 33.2384C72.5735 33.5349 72.7263 33.9189 72.7263 34.3906C72.7263 35.0959 72.4567 35.6395 71.9177 36.0213C71.3831 36.3986 70.6037 36.5873 69.5795 36.5873H66.0217V29.1348H69.566C71.5156 29.1348 72.4904 29.7704 72.4904 31.0417ZM71.1023 34.2963C71.1023 33.9369 70.9631 33.6831 70.6846 33.5349C70.4061 33.3821 69.9883 33.3058 69.4313 33.3058H67.6052V35.4148H69.4717C70.5588 35.4148 71.1023 35.042 71.1023 34.2963ZM70.9069 31.1765C70.9069 30.88 70.7901 30.6666 70.5565 30.5363C70.3274 30.4016 69.9838 30.3342 69.5256 30.3342H67.6052V32.1266H69.2897C69.8198 32.1266 70.2219 32.0592 70.4959 31.9244C70.7699 31.7852 70.9069 31.5358 70.9069 31.1765Z"/>
+          <path d="M77.6183 36.7221C76.4593 36.7221 75.5519 36.3852 74.896 35.7113C74.2446 35.033 73.9189 34.1009 73.9189 32.9149C73.9189 31.6976 74.2222 30.7407 74.8286 30.0444C75.4351 29.3481 76.2684 29 77.3285 29C78.3123 29 79.0895 29.2987 79.66 29.8962C80.2305 30.4937 80.5157 31.3157 80.5157 32.3624V33.2182H75.5496C75.5721 33.9414 75.7675 34.4984 76.1358 34.8893C76.5042 35.2756 77.023 35.4687 77.6924 35.4687C78.1326 35.4687 78.5414 35.4283 78.9188 35.3475C79.3006 35.2621 79.7094 35.1229 80.1451 34.9297V36.2167C79.7588 36.4009 79.368 36.5312 78.9727 36.6075C78.5773 36.6839 78.1259 36.7221 77.6183 36.7221ZM77.3285 30.1994C76.8254 30.1994 76.4211 30.3589 76.1156 30.6778C75.8147 30.9968 75.635 31.4617 75.5766 32.0727H78.9592C78.9502 31.4572 78.802 30.9923 78.5145 30.6778C78.227 30.3589 77.8316 30.1994 77.3285 30.1994Z"/>
+          <path d="M83.8983 29.1348V32.1266H87.409V29.1348H88.9925V36.5873H87.409V33.3731H83.8983V36.5873H82.3148V29.1348H83.8983Z"/>
+          <path d="M92.8468 29.1348V32.1266H96.3574V29.1348H97.9409V36.5873H96.3574V33.3731H92.8468V36.5873H91.2633V29.1348H92.8468Z"/>
+          <path d="M104.875 36.5873L104.558 35.5496H104.504C104.145 36.0033 103.783 36.3133 103.419 36.4795C103.055 36.6412 102.588 36.7221 102.018 36.7221C101.285 36.7221 100.713 36.5244 100.299 36.1291C99.8905 35.7338 99.6861 35.1745 99.6861 34.4513C99.6861 33.6831 99.9714 33.1036 100.542 32.7128C101.112 32.322 101.982 32.1086 103.15 32.0727L104.437 32.0322V31.6347C104.437 31.1585 104.324 30.8036 104.1 30.57C103.88 30.3319 103.536 30.2129 103.069 30.2129C102.687 30.2129 102.321 30.269 101.97 30.3813C101.62 30.4937 101.283 30.6262 100.96 30.7789L100.448 29.6469C100.852 29.4357 101.294 29.2763 101.775 29.1685C102.256 29.0562 102.709 29 103.136 29C104.084 29 104.798 29.2066 105.279 29.6199C105.764 30.0332 106.007 30.6823 106.007 31.5673V36.5873H104.875ZM102.516 35.5092C103.091 35.5092 103.552 35.3497 103.898 35.0308C104.248 34.7073 104.423 34.2559 104.423 33.6764V33.0295L103.466 33.0699C102.721 33.0969 102.177 33.2227 101.836 33.4473C101.499 33.6674 101.33 34.0065 101.33 34.4647C101.33 34.7972 101.429 35.0555 101.627 35.2396C101.824 35.4193 102.121 35.5092 102.516 35.5092Z"/>
+          <path d="M108.978 36.5873H107.206L109.281 33.5349C108.778 33.3911 108.383 33.1351 108.096 32.7667C107.808 32.3938 107.664 31.9334 107.664 31.3854C107.664 30.6801 107.916 30.1298 108.419 29.7345C108.922 29.3347 109.609 29.1348 110.481 29.1348H113.877V36.5873H112.287V33.7168H110.784L108.978 36.5873ZM109.207 31.3988C109.207 31.7807 109.351 32.0682 109.639 32.2613C109.931 32.45 110.321 32.5443 110.811 32.5443H112.287V30.3342H110.562C110.13 30.3342 109.796 30.4263 109.558 30.6104C109.324 30.7946 109.207 31.0574 109.207 31.3988Z"/>
+          <path d="M124.544 29.1348V30.3746H121.309V36.5873H119.726V29.1348H124.544Z"/>
+          <path d="M130.642 36.5873L130.325 35.5496H130.271C129.912 36.0033 129.55 36.3133 129.186 36.4795C128.822 36.6412 128.355 36.7221 127.785 36.7221C127.053 36.7221 126.48 36.5244 126.067 36.1291C125.658 35.7338 125.453 35.1745 125.453 34.4513C125.453 33.6831 125.739 33.1036 126.309 32.7128C126.88 32.322 127.749 32.1086 128.917 32.0727L130.204 32.0322V31.6347C130.204 31.1585 130.092 30.8036 129.867 30.57C129.647 30.3319 129.303 30.2129 128.836 30.2129C128.454 30.2129 128.088 30.269 127.738 30.3813C127.387 30.4937 127.05 30.6262 126.727 30.7789L126.215 29.6469C126.619 29.4357 127.062 29.2763 127.542 29.1685C128.023 29.0562 128.477 29 128.903 29C129.851 29 130.565 29.2066 131.046 29.6199C131.531 30.0332 131.774 30.6823 131.774 31.5673V36.5873H130.642ZM128.283 35.5092C128.858 35.5092 129.319 35.3497 129.665 35.0308C130.015 34.7073 130.19 34.2559 130.19 33.6764V33.0295L129.234 33.0699C128.488 33.0969 127.944 33.2227 127.603 33.4473C127.266 33.6674 127.097 34.0065 127.097 34.4647C127.097 34.7972 127.196 35.0555 127.394 35.2396C127.592 35.4193 127.888 35.5092 128.283 35.5092Z"/>
+          <path d="M140.109 36.5873H138.512V30.3746H136.457C136.331 31.9738 136.16 33.2227 135.945 34.1211C135.734 35.0195 135.455 35.6754 135.109 36.0887C134.768 36.502 134.323 36.7086 133.775 36.7086C133.429 36.7086 133.139 36.6592 132.906 36.5604V35.3205C133.072 35.3834 133.238 35.4148 133.404 35.4148C133.863 35.4148 134.222 34.9005 134.483 33.8718C134.748 32.8386 134.954 31.2596 135.103 29.1348H140.109V36.5873Z"/>
+          <path d="M145.634 36.7221C144.475 36.7221 143.568 36.3852 142.912 35.7113C142.261 35.033 141.935 34.1009 141.935 32.9149C141.935 31.6976 142.238 30.7407 142.845 30.0444C143.451 29.3481 144.285 29 145.345 29C146.329 29 147.106 29.2987 147.676 29.8962C148.247 30.4937 148.532 31.3157 148.532 32.3624V33.2182H143.566C143.588 33.9414 143.784 34.4984 144.152 34.8893C144.52 35.2756 145.039 35.4687 145.709 35.4687C146.149 35.4687 146.558 35.4283 146.935 35.3475C147.317 35.2621 147.726 35.1229 148.161 34.9297V36.2167C147.775 36.4009 147.384 36.5312 146.989 36.6075C146.594 36.6839 146.142 36.7221 145.634 36.7221ZM145.345 30.1994C144.842 30.1994 144.437 30.3589 144.132 30.6778C143.831 30.9968 143.651 31.4617 143.593 32.0727H146.975C146.966 31.4572 146.818 30.9923 146.531 30.6778C146.243 30.3589 145.848 30.1994 145.345 30.1994Z"/>
+          <path d="M154.111 36.7221C153.168 36.7221 152.436 36.3829 151.915 35.7046H151.82C151.883 36.3335 151.915 36.7153 151.915 36.8501V39.9025H150.331V29.1348H151.611C151.647 29.274 151.721 29.6064 151.834 30.132H151.915C152.409 29.3773 153.15 29 154.138 29C155.068 29 155.791 29.3369 156.308 30.0107C156.829 30.6846 157.09 31.6302 157.09 32.8476C157.09 34.0649 156.825 35.015 156.294 35.6979C155.769 36.3807 155.041 36.7221 154.111 36.7221ZM153.727 30.2938C153.098 30.2938 152.638 30.4779 152.346 30.8463C152.058 31.2146 151.915 31.8031 151.915 32.6117V32.8476C151.915 33.755 152.058 34.4131 152.346 34.8219C152.633 35.2262 153.103 35.4283 153.754 35.4283C154.302 35.4283 154.724 35.2037 155.021 34.7545C155.317 34.3053 155.466 33.6651 155.466 32.8341C155.466 31.9985 155.317 31.3674 155.021 30.9406C154.729 30.5094 154.298 30.2938 153.727 30.2938Z"/>
+          <path d="M162.184 36.7221C161.025 36.7221 160.117 36.3852 159.461 35.7113C158.81 35.033 158.484 34.1009 158.484 32.9149C158.484 31.6976 158.788 30.7407 159.394 30.0444C160 29.3481 160.834 29 161.894 29C162.878 29 163.655 29.2987 164.225 29.8962C164.796 30.4937 165.081 31.3157 165.081 32.3624V33.2182H160.115C160.137 33.9414 160.333 34.4984 160.701 34.8893C161.07 35.2756 161.588 35.4687 162.258 35.4687C162.698 35.4687 163.107 35.4283 163.484 35.3475C163.866 35.2621 164.275 35.1229 164.711 34.9297V36.2167C164.324 36.4009 163.933 36.5312 163.538 36.6075C163.143 36.6839 162.691 36.7221 162.184 36.7221ZM161.894 30.1994C161.391 30.1994 160.987 30.3589 160.681 30.6778C160.38 30.9968 160.2 31.4617 160.142 32.0727H163.525C163.516 31.4572 163.367 30.9923 163.08 30.6778C162.792 30.3589 162.397 30.1994 161.894 30.1994Z"/>
+          <path d="M167.642 36.5873H165.87L167.945 33.5349C167.442 33.3911 167.046 33.1351 166.759 32.7667C166.471 32.3938 166.328 31.9334 166.328 31.3854C166.328 30.6801 166.579 30.1298 167.082 29.7345C167.586 29.3347 168.273 29.1348 169.144 29.1348H172.54V36.5873H170.95V33.7168H169.448L167.642 36.5873ZM167.871 31.3988C167.871 31.7807 168.015 32.0682 168.302 32.2613C168.594 32.45 168.985 32.5443 169.475 32.5443H170.95V30.3342H169.225C168.794 30.3342 168.459 30.4263 168.221 30.6104C167.988 30.7946 167.871 31.0574 167.871 31.3988Z"/>
+          <path d="M0 21.5989H11.6611C16.2601 21.5989 18.6142 19.5161 18.6142 15.5512V15.4895C18.6142 12.5428 17.1175 10.7532 14.2334 10.244V9.96634C16.6498 9.50351 17.9126 7.92987 17.9126 5.36886V5.29173C17.9126 1.80505 15.7145 0 11.4117 0H0V21.5989ZM4.59897 8.84011V3.0547H10.0398C12.2379 3.0547 13.3292 4.01122 13.3292 5.89341V5.95512C13.3292 7.86816 12.2379 8.84011 10.0398 8.84011H4.59897ZM4.59897 18.5288V11.648H10.1801C12.5965 11.648 13.7969 12.7896 13.7969 15.0266V15.0884C13.7969 17.3717 12.5965 18.5288 10.1801 18.5288H4.59897Z"/>
+          <path d="M22.9462 0V21.5989H27.4828V0H22.9462Z"/>
+          <path d="M36.9751 22C40.6387 22 43.3046 20.3801 44.2867 17.6339L44.5985 17.7111C44.0061 20.7041 44.6297 22 48.2153 22C48.6674 22 49.1195 21.9537 49.4937 21.892L50.0237 19.223L49.2443 19.2076C48.3868 19.1921 48.1374 18.9916 48.1374 17.8962V10.4755C48.1374 6.80365 45.6742 5.04488 40.4205 5.04488C34.8393 5.04488 32.0176 7.2202 32.2514 10.9846L36.7257 11.3548C36.5386 8.87097 37.817 7.74474 40.3269 7.74474C42.5718 7.74474 43.6319 8.56241 43.6319 10.4292V11.3394L39.2045 12.1417C34.777 12.9593 31.8461 14.3478 31.8461 17.7419V17.7882C31.8461 20.4727 33.6857 22 36.9751 22ZM38.7835 19.007C37.2557 19.007 36.4295 18.467 36.4295 17.3562V17.3254C36.4295 15.7363 37.8793 15.0884 40.7478 14.533L43.6319 13.9776V14.7335C43.6319 17.2174 41.3714 19.007 38.7835 19.007Z"/>
+          <path d="M53.8414 21.5989H58.378V14.0701C58.378 10.4292 60.1084 8.17672 62.9769 8.17672C65.1127 8.17672 66.1728 9.27209 66.1728 11.3703V21.5989H70.7095V10.2903C70.7095 6.89621 68.6984 5.10659 64.9568 5.10659C61.5583 5.10659 59.2354 6.58766 57.8635 9.67321L57.5517 9.53436C58.1753 7.69846 58.3936 6.60309 58.3936 5.39972H53.8414V21.5989Z"/>
+          <path d="M84.2083 21.9846C89.5556 21.9846 92.5488 19.8555 93.0009 15.7363L88.4175 15.2272C88.2305 17.8191 86.7962 19.1304 84.2239 19.1304C81.3398 19.1304 79.8432 17.3408 79.8432 13.8079V13.0519C79.8432 9.59607 81.3554 7.85273 84.1771 7.85273C86.7806 7.85273 88.1369 9.28752 88.3396 12.1571L92.8606 11.648C92.502 7.28191 89.618 5.01403 84.1927 5.01403C78.2998 5.01403 75.1974 7.86816 75.1974 13.3296V13.5302C75.1974 19.0842 78.2686 21.9846 84.2083 21.9846Z"/>
+          <path d="M97.5201 21.5989H102.057V14.0701C102.057 10.4292 103.772 8.19215 106.656 8.19215C108.791 8.19215 109.852 9.27209 109.852 11.3703V21.5989H114.388V10.2903C114.388 6.89621 112.362 5.10659 108.636 5.10659C105.206 5.10659 102.899 6.58766 101.542 9.65778L101.215 9.53436C101.823 7.80645 102.041 6.52595 102.057 4.9986V0H97.5201V21.5989Z"/>
+          <path d="M123.803 22C127.466 22 130.132 20.3801 131.114 17.6339L131.426 17.7111C130.833 20.7041 131.457 22 135.043 22C135.495 22 135.947 21.9537 136.321 21.892L136.851 19.223L136.072 19.2076C135.214 19.1921 134.965 18.9916 134.965 17.8962V10.4755C134.965 6.80365 132.502 5.04488 127.248 5.04488C121.667 5.04488 118.845 7.2202 119.079 10.9846L123.553 11.3548C123.366 8.87097 124.644 7.74474 127.154 7.74474C129.399 7.74474 130.459 8.56241 130.459 10.4292V11.3394L126.032 12.1417C121.604 12.9593 118.673 14.3478 118.673 17.7419V17.7882C118.673 20.4727 120.513 22 123.803 22ZM125.611 19.007C124.083 19.007 123.257 18.467 123.257 17.3562V17.3254C123.257 15.7363 124.707 15.0884 127.575 14.533L130.459 13.9776V14.7335C130.459 17.2174 128.199 19.007 125.611 19.007Z"/>
+          <path d="M140.669 21.5989H145.205V14.8261C145.205 10.5989 146.53 9.04067 149.991 8.79383L152.221 8.62412L151.691 4.8906C148.027 5.1683 146.328 6.30996 144.644 9.67321L144.348 9.53436C145.081 7.37447 145.252 6.51052 145.221 5.39972H140.669V21.5989Z"/>
+          <path d="M162.243 21.892C165.61 21.892 167.809 20.3492 168.915 17.5568L169.243 17.6648C168.713 19.3619 168.432 20.7041 168.417 21.5989H173V0H168.463V4.39691C168.463 6.09397 168.697 7.46704 169.258 9.3338L168.947 9.45722C167.84 6.68022 165.626 5.07574 162.243 5.07574C157.566 5.07574 155.103 7.89902 155.103 13.2987V13.6844C155.103 19.0687 157.566 21.892 162.243 21.892ZM163.958 19.115C161.152 19.115 159.686 17.3408 159.686 13.8387V13.129C159.686 9.6115 161.152 7.82188 163.958 7.82188C166.889 7.82188 168.463 9.70407 168.463 13.2062V13.7616C168.463 17.2482 166.889 19.115 163.958 19.115Z"/>
+        </svg>
+      </div>
+
+      <ul class="footer__socials flex">
+
+        <li class="footer__socials-item">
+          <a href="https://vk.com/" class="footer__socials-link footer__socials-link-vk" target="_blank">
+            <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Страница ВКонтакте">
+              <path d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"/>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__socials-item">
+          <a href="https://ok.ru/" class="footer__socials-link footer__socials-link-ok" target="_blank">
+            <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Страница Одноклассники">
+              <path d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z"/>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+<script src="libs/custom-scroll/simplebar.min.js"></script>
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/choices/choices.min.js"></script>
+<script src="libs/accordion/accordion.min.js"></script>
+<script src="libs/tooltips/popper.min.js"></script>
+<script src="libs/tooltips/tippy-bundle.umd.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey="></script>
+<script src="libs/inputmask/inputmask.min.js"></script>
+<script src="libs/validator/just-validate.production.min.js"></script>
+</body>
+</html>
