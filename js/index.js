@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let searchCloseBtn = document.querySelector('.header__search-mobile-close');
   let searchContainer = document.querySelector('.header__search-mobile');
   let searchInput = document.querySelector('.header__search-mobile input');
+  let searchForm = document.querySelector('.header__search-mobile-form');
 
   searchOpenBtn.addEventListener('click', function() {
     searchContainer.classList.add('header__search-mobile--active');
@@ -81,32 +82,47 @@ document.addEventListener('DOMContentLoaded', function() {
     searchContainer.classList.remove('header__search-mobile--active');
   })
 
+  document.addEventListener('click', function(event) {
+    if (!(event.composedPath().includes(searchForm) || event.composedPath().includes(searchOpenBtn))) {
+      searchContainer.classList.remove('header__search-mobile--active');
+    }
+  })
+
   // header dropdowns
   let dropdownBtns = document.querySelectorAll('.header__dropdown-btn');
+  let dropdownItems = Array.from(dropdownBtns).map((btn) => {
+    return [btn, btn.nextElementSibling];
+  });
 
-  dropdownBtns.forEach((e) => {
+  dropdownItems.forEach(([btn, content]) => {
 
-    e.nextElementSibling.setAttribute('inert', '');
+    content.setAttribute('inert', '');
 
-    e.addEventListener('click', function() {
+    btn.addEventListener('click', function() {
 
-      dropdownBtns.forEach((el) => {
-        if (el !== e) {
-
-          el.classList.remove('header__dropdown-btn--active');
-          el.setAttribute('aria-expanded', 'false');
-          el.nextElementSibling.classList.remove('header__dropdown-content-wrapper--active');
-          el.nextElementSibling.setAttribute('inert', '');
-
-        };
-      });
-
-      this.classList.toggle('header__dropdown-btn--active');
-      this.setAttribute('aria-expanded', !JSON.parse(this.getAttribute('aria-expanded')));
-      this.nextElementSibling.classList.toggle('header__dropdown-content-wrapper--active');
-      this.nextElementSibling.toggleAttribute('inert')
+      btn.classList.toggle('header__dropdown-btn--active');
+      btn.setAttribute('aria-expanded', !JSON.parse(btn.getAttribute('aria-expanded')));
+      content.classList.toggle('header__dropdown-content-wrapper--active');
+      content.toggleAttribute('inert')
 
     });
+  });
+
+  document.addEventListener('click', function(event) {
+
+    dropdownItems.forEach(([btn, content]) => {
+
+      if ( !(event.composedPath().includes(btn) || event.composedPath().includes(content)) ) {
+
+        btn.classList.remove('header__dropdown-btn--active');
+        btn.setAttribute('aria-expanded', 'false');
+        content.classList.remove('header__dropdown-content-wrapper--active');
+        content.setAttribute('inert', '');
+
+      };
+
+    });
+
   });
 
   document.querySelectorAll('.simplebar-content-wrapper').forEach((e) => {
@@ -235,6 +251,10 @@ document.addEventListener('DOMContentLoaded', function() {
   let galleryModalWindow = document.querySelector('.gallery__modal');
   let galleryModalBtns = document.querySelectorAll('.gallery__modal-btn');
 
+  function getActiveModalItem() {
+    return document.querySelector('.gallery__modal-item--active');
+  }
+
   gallerySwiper.slides.forEach((slide) => {
     slide.addEventListener('click', function() {
 
@@ -256,10 +276,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
       document.body.classList.remove('stop-scroll');
 
-      this.closest('.gallery__modal-item--active').classList.remove('gallery__modal-item--active');
+      getActiveModalItem().classList.remove('gallery__modal-item--active');
 
     });
   });
+
+  galleryModalWindow.addEventListener('click', function(event) {
+
+    let activeItem = getActiveModalItem();
+
+    if ( activeItem && !event.composedPath().includes(activeItem) ) {
+
+      galleryModalWindow.classList.remove('gallery__modal--active');
+
+      document.body.classList.remove('stop-scroll');
+
+      activeItem.classList.remove('gallery__modal-item--active');
+
+    }
+
+  })
 
 // catalog
   // catalog accordion
@@ -499,30 +535,6 @@ document.addEventListener('DOMContentLoaded', function() {
         this.style.backgroundColor = '';
       });
     });
-
-  // contacts send form
-  const contactsForm = document.querySelector('.contacts__form');
-  contactsForm.addEventListener('submit', formSend);
-
-    async function formSend(e) {
-      e.preventDefault();
-
-      let formData = new FormData(contactsForm);
-
-      let response = await fetch('sendmail.php', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (response.ok) {
-        let result = await response.json();
-        alert(result.message);
-        contactsForm.reset();
-      } else {
-        alert('Ошибка');
-      }
-
-    };
 
   // contacts map
   var YaMap;
