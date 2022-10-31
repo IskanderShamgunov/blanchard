@@ -129,29 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
     e.setAttribute('aria-label', 'Прокручиваемый список');
   })
 
-// hero
-  // hero background change
-  let heroBackground = document.querySelector('.hero__bg');
-  let heroImgArray = ['var(--hero-bg-1)', 'var(--hero-bg-2)', 'var(--hero-bg-3)'];
-
-  (function() {
-
-    heroBackground.style.backgroundImage = `var(--hero-bg-1)`;
-    let i = 2;
-
-    setInterval(() => {
-      if (i <= heroImgArray.length) {
-
-        heroBackground.style.backgroundImage = `var(--hero-bg-${i})`;
-        ++i;
-
-        if (i === 4) i = 1;
-
-      }
-    }, 5000);
-
-  })();
-
 // gallery
   // gallery select
   const gellerySelect = document.querySelector('.filter-form__select');
@@ -346,14 +323,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (catalogTargetContent) {
         catalogTargetContent.classList.add('catalog__content--active');
-
-        if (window.screen.width <= 576) {
-          catalogTargetContent.scrollIntoView();
-        }
-
       } else {
         catalogUnknown.classList.add('catalog__content--active');
       };
+
+      if (window.screen.width <= 576) {
+        (catalogTargetContent || catalogUnknown).scrollIntoView();
+      }
 
     });
   });

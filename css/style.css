@@ -879,16 +879,17 @@ body {
 }
 
 .hero__bg {
+  --hero-bg-1: url("../img/hero/1920-hero-1.jpg");
+  --hero-bg-2: url("../img/hero/1920-hero-2.jpg");
+  --hero-bg-3: url("../img/hero/1920-hero-3.jpg");
   padding: 138px 0 122px 0;
   width: 100%;
   height: 100%;
-  --hero-bg-1: url("img/hero/1920-hero-1.jpg");
-  --hero-bg-2: url("img/hero/1920-hero-2.jpg");
-  --hero-bg-3: url("img/hero/1920-hero-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  transition: background-image 1s ease-in-out;
+  background-image: var(--hero-bg-1);
+  animation: heroSlides 30s linear infinite;
 }
 
 .hero__content {
@@ -2495,9 +2496,9 @@ div[data-tippy-root] {
   }
 
   .hero__bg {
-    --hero-bg-1: url("img/hero/1024-hero-1.jpg");
-    --hero-bg-2: url("img/hero/1024-hero-2.jpg");
-    --hero-bg-3: url("img/hero/1024-hero-3.jpg");
+    --hero-bg-1: url("../img/hero/1024-hero-1.jpg");
+    --hero-bg-2: url("../img/hero/1024-hero-2.jpg");
+    --hero-bg-3: url("../img/hero/1024-hero-3.jpg");
     padding: 106px 0 114px 0;
   }
 
@@ -2714,9 +2715,9 @@ div[data-tippy-root] {
 
   /* hero-768 */
   .hero__bg {
-    --hero-bg-1: url("img/hero/768-hero-1.jpg");
-    --hero-bg-2: url("img/hero/768-hero-2.jpg");
-    --hero-bg-3: url("img/hero/768-hero-3.jpg");
+    --hero-bg-1: url("../img/hero/768-hero-1.jpg");
+    --hero-bg-2: url("../img/hero/768-hero-2.jpg");
+    --hero-bg-3: url("../img/hero/768-hero-3.jpg");
   }
 
   /* gallery-768 */
@@ -2890,9 +2891,9 @@ div[data-tippy-root] {
 
   /* hero-576 */
   .hero__bg {
-    --hero-bg-1: url("img/hero/576-hero-1.jpg");
-    --hero-bg-2: url("img/hero/576-hero-2.jpg");
-    --hero-bg-3: url("img/hero/576-hero-3.jpg");
+    --hero-bg-1: url("../img/hero/576-hero-1.jpg");
+    --hero-bg-2: url("../img/hero/576-hero-2.jpg");
+    --hero-bg-3: url("../img/hero/576-hero-3.jpg");
     padding: 30px 0 45px 0;
   }
 
@@ -3422,9 +3423,9 @@ div[data-tippy-root] {
 
   /* hero-320 */
   .hero__bg {
-    --hero-bg-1: url("img/hero/320-hero-1.jpg");
-    --hero-bg-2: url("img/hero/320-hero-2.jpg");
-    --hero-bg-3: url("img/hero/320-hero-3.jpg");
+    --hero-bg-1: url("../img/hero/320-hero-1.jpg");
+    --hero-bg-2: url("../img/hero/320-hero-2.jpg");
+    --hero-bg-3: url("../img/hero/320-hero-3.jpg");
   }
 
   /* gallery-320 */
@@ -3475,5 +3476,38 @@ div[data-tippy-root] {
   .gallery__modal-item:nth-child(6) .gallery__modal-pic {
     background-image: url("../img/gallery/320-modal-img-6.jpg");
   }
+
+}
+
+@keyframes heroSlides {
+
+  0% {
+    background-image: var(--hero-bg-1);
+  }
+
+  14.5% {
+    background-image: var(--hero-bg-1);
+  }
+
+  18.5% {
+    background-image: var(--hero-bg-2);
+  }
+
+  48% {
+    background-image: var(--hero-bg-2);
+  }
+
+  52% {
+    background-image: var(--hero-bg-3);
+  }
+
+  81.3% {
+    background-image: var(--hero-bg-3);
+  }
+
+  85.3% {
+    background-image: var(--hero-bg-1);
+  }
+
 
 }
